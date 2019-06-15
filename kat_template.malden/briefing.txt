@@ -1,0 +1,258 @@
+<p><span style="font-size:20px"><strong><u>Allgemeines</u></strong></span></p>
+
+<ul>
+	<li>Missionsbauer:&nbsp;Katalam</li>
+	<li>Map:&nbsp;MAP</li>
+	<li>Spieleranzahl:&nbsp;Anzahl der Spieler in der Mission, Zeus-Plätze werden extra angegeben (Beispiel bei 39 Spielern und 1 Zeus: 39+1)</li>
+	<li>Benötigte Repositories:
+    <ul>
+        <li>Tactical Training Team Standard</li>
+        <li>Tactical Training Team - CUP</li>
+        <li>Tactical Training Team - RHS</li>
+    </ul>
+</ul>
+
+<hr />
+<p><span style="font-size:20px"><strong><u>Lage</u></strong></span></p>
+
+<p>[collapsed title=Gliederung]&nbsp;</p>
+
+<p><u><strong>Historisches</strong></u></p>
+
+<p>test</p>
+
+<p><u><strong>Eigene Lage</strong></u></p>
+
+<p>test</p>
+
+<p><u><strong>Feindlage</strong></u></p>
+
+<p>test</p>
+
+<p><u><strong>Zivilisten</strong></u></p>
+
+<p>test</p>
+
+<p><u><strong>Gelände</strong></u></p>
+
+<p>test</p>
+
+<p><u><strong>Wetter</strong></u></p>
+
+<p>test</p>
+
+<p><u><strong>Aufklärung</strong></u></p>
+test
+
+<p>[/collapsed]<br />
+&nbsp;</p>
+
+<hr />
+<p><span style="font-size:20px"><strong><u>Auftrag</u></strong></span></p>
+
+<p>Eine Beschreibung der in der Mission zu erledigenden Aufträge. Ausformulierter Fließtext oder stichpunktartige Auflistung, optional Bilder.</p>
+
+<hr />
+<p><span style="font-size:20px"><strong><u>Durchführung</u></strong></span></p>
+
+<p>Eine Erklärung, wie die Mission durchzuführen ist. Optionaler Abschnitt - kann weggelassen werden, wenn es keinerlei Vorgaben zur Durchführung der Mission gibt.</p>
+
+<hr />
+<p><span style="font-size:20px"><strong><u>Einsatzunterstützung</u></strong></span></p>
+
+<p>zur Verfügung stehende Fahrzeuge, Materialien, Kisten, Waffen &amp; Waffensysteme, Loadouts der Einzelschützen (in Spoilern verpackt)</p>
+
+<p>[collapsed title=Fahrzeuge]</p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:762px">
+	<thead>
+		<tr>
+			<th scope="col" style="width:131px">Fahrzeug</th>
+			<th scope="col" style="width:190px">Beschreibung</th>
+			<th scope="col" style="width:190px">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="width:131px">Anzahl</td>
+			<td style="width:190px">Typ</td>
+			<td style="width:190px">Standort, Verwendung durch Teileinheit XYZ, Ausrüstung &amp; Ersatzteile, Besonderheiten</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>[/collapsed]</p>
+
+<p>[collapsed title=Material]</p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="height:55px; width:635px">
+	<thead>
+		<tr>
+			<th scope="col" style="width:134px">Material</th>
+			<th scope="col" style="width:207px">Beschreibung</th>
+			<th scope="col" style="width:207px">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="width:134px">Anzahl</td>
+			<td style="width:207px">Typ</td>
+			<td style="width:273px">Standort, Inhalt, Besonderheiten</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>[/collapsed]</p>
+
+<p>[collapsed title=Loadouts]&nbsp;</p>
+
+<p>[collapsed title=Gruppenführer]</p>
+
+<pre>
+<code class="language-cpp">comment "Exported from Arsenal by Speutzi";
+
+comment "Remove existing items";
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+comment "Add containers";
+player forceAddUniform (["PBW_Uniform4K_tropen","PBW_Uniform4_tropen"] call BIS_fnc_selectRandom);
+player addItemToUniform "ACE_GD300_b";
+
+player addVest "BWA3_Vest_Leader_Tropen";
+player addItemToVest "ACE_MapTools";
+for "_i" from 1 to 8 do {player addItemToVest "ACE_fieldDressing";};
+player addItemToVest "ACE_morphine";
+player addItemToVest "ACE_microDAGR";
+player addItemToVest "ACE_IR_Strobe_Item";
+player addItemToVest "ACE_CableTie";
+player addItemToVest "ACE_Flashlight_XL50";
+for "_i" from 1 to 2 do {player addItemToVest "BWA3_15Rnd_9x19_P8";};
+for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
+player addItemToVest "SmokeShellRed";
+player addItemToVest "SmokeShellGreen";
+player addItemToVest "SmokeShellPurple";
+player addItemToVest "HandGrenade";
+for "_i" from 1 to 2 do {player addItemToVest "ACE_M84";};
+
+player addBackpack (["BWA3_Carryall_Tropen","BWA3_PatrolPack_Tropen","BWA3_Kitbag_Tropen","BWA3_TacticalPack_Tropen"] call BIS_fnc_selectRandom);
+for "_i" from 1 to 3 do {player addItemToBackpack "hlc_30rnd_556x45_MDIM_G36";};
+for "_i" from 1 to 3 do {player addItemToBackpack "hlc_30rnd_556x45_MDIM_G36";};
+player addItemToBackpack "ACE_NVG_Wide";
+player addItemToBackpack "BWA3_Beret_Falli";
+player addItemToBackpack "ACE_HuntIR_monitor";
+
+player addHeadgear "PBW_muetze2_tropen";
+
+player addGoggles (["CUP_TK_NeckScarf","CUP_FR_NeckScarf2"] call BIS_fnc_selectRandom);
+
+comment "Add weapons";
+player addWeapon "hlc_rifle_G36A1";
+player addPrimaryWeaponItem "HLC_Optic_G36Dualoptic15x2d";
+player addWeapon "BWA3_P8";
+player addWeapon "Rangefinder";
+
+comment "Add items";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "ItemWatch";
+player linkItem "TFAR_anprc152";
+</code></pre>
+
+<p>[/collapsed]</p>
+
+<p>[/collapsed]</p>
+
+<hr />
+<p><span style="font-size:20px"><strong><u>Führung &amp; Kommunikation</u></strong></span></p>
+
+<p>Kommandoübergabe (Seniorität Führungskräfte), Kommunikation mit Funkfrequenzen ((A)SR, MR, LR), Funkkreisen (als Liste oder Bild), Slots mit Funkgeräten &amp; davon abhängiges Führungsverhalten, Funkgerät-Typen, andere Arten der Kommunikation (Licht-, Feuer-, Geräusch-Signale etc.), Schleierfunk, Parolen für Frequenzwechsel etc.<br />
+Eventuelle Bilder zur Kommandostruktur oder Funkstruktur.<br />
+<u><strong>Funk- und Kommando Organigramme gehören hier rein. Sind diese aber mit einem Truppstrukturbild gekoppelt, könnt ihr Führung und Kommunikation freilassen.</strong></u><br />
+Beispiel:</p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+	<thead>
+		<tr>
+			<th colspan="1" rowspan="2" scope="col">Einheit</th>
+			<th colspan="4" scope="col">Funkfrequenz</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="rtecenter">&nbsp;</td>
+			<td class="rtecenter">SR</td>
+			<td class="rtecenter">ASR</td>
+			<td class="rtecenter">LR</td>
+		</tr>
+		<tr>
+			<td class="rtecenter">Alpha</td>
+			<td class="rtecenter">114</td>
+			<td class="rtecenter">110</td>
+			<td class="rtecenter" colspan="2">41</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>oder</p>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">
+	<thead>
+		<tr>
+			<th scope="col">Funkkreis</th>
+			<th scope="col">Funkfrequenz</th>
+			<th scope="col">Teilnehmer</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Zugführungskreis</td>
+			<td>SR 110</td>
+			<td>Alpha. Bravo, Charlie</td>
+		</tr>
+		<tr>
+			<td>Unterstützungskreis</td>
+			<td>LR 30</td>
+			<td>Hammer, Dagger</td>
+		</tr>
+		<tr>
+			<td>Versorgungskreis</td>
+			<td>LR 40</td>
+			<td>Starlight, Dustoff</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+<p><span style="font-size:20px"><strong><u>Truppstruktur</u></strong></span></p>
+
+<p><span style="font-size:12px">Eine Auflistung der in der Mission verwendeten Truppstruktur inkl. Funkfrequenzen (SR, LR und - falls vorhanden - ASR). Einzige Ausnahme: TvT, dort müssen die Funkfrequenzen nicht hier mit angegeben werden, sondern im In-Game-Briefing der jeweiligen Fraktion (kann man bei Coop-Missionen natürlich auch machen). Die Auflistung erfolgt entweder als Bild (wie z.B. bei der TTT-Truppstruktur) oder nach folgendem Format:</span></p>
+
+<p><span style="font-size:14px"><strong>Trupp&nbsp;<em>"</em><em>Truppname</em>",&nbsp;Trupprolle |&nbsp;SR&nbsp;SR-Frequenz, LR&nbsp;LR-Frequenz</strong></span></p>
+
+<ol>
+	<li>Truppposition 1</li>
+	<li>Truppposition 2</li>
+	<li>Truppposition 3</li>
+	<li>usw.</li>
+</ol>
+
+<hr />
+<p><span style="font-size:20px"><strong><u>Zusätzliche Informationen</u></strong></span></p>
+
+<p><em><span style="font-size:12px">Eine stichpunktartige Auflistung nützlicher Informationen für die Mission, z.B.<br />
+Hier kann auch noch unterteilt werden zwischen Technische und spielerische Informationen<br />
+Das Arbeiten mit Spoilern bietet sich auch hier an</span></em></p>
+
+<ul>
+	<li><span style="font-size:12px">ACE-Lifetime / Medic-System-Einstellungen</span></li>
+	<li><span style="font-size:12px">Position des technischen Teleports</span></li>
+	<li><span style="font-size:12px">alles, was von unseren Standardeinstellungen abweicht</span></li>
+	<li><span style="font-size:12px">alles, was man sonst so zu der Mission wissen sollte und bisher noch nicht erwähnt wurde</span><em><span style="font-size:12px"> </span></em></li>
+</ul>

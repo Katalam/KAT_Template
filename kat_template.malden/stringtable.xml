@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="kat_template">
+    <Package name="admintools">
+        <Key ID="STR_kat_template_captive">
+            <English>Captive Unit</English>
+            <German>Fessle Einheit</German>
+        </Key>
+        <Key ID="STR_kat_template_decaptive">
+            <English>Decaptive Unit</English>
+            <German>Entfessle Einheit</German>
+        </Key>
+        <Key ID="STR_kat_template_endWinNice">
+            <English>End win w/ statistic</English>
+            <German>Gewinne mit Statistik</German>
+        </Key>
+        <Key ID="STR_kat_template_endLose">
+            <English>End w/ lose</English>
+            <German>Verlierer Ende</German>
+        </Key>
+    </Package>
+    <Package name="general">
+        <Key ID="STR_kat_template_spectator">
+            <English>Spectator</English>
+            <German>Zuschauer</German>
+        </Key>
+        <Key ID="STR_kat_template_beSpectator">
+            <English>Be a spectator</English>
+            <German>Zuschauer werden</German>
+        </Key>
+        <Key ID="STR_kat_template_noPlatoonLeader">
+            <English>Platoon Leader not found</English>
+            <German>Zugführer nicht gefunden.</German>
+        </Key>
+        <Key ID="STR_kat_template_groupNear">
+            <English>All your group members are in close distance. You will not be teleported.</English>
+            <German>Deine Gruppe ist ganz in deiner Nähe. Du wirst nicht teleportiert.</German>
+        </Key>
+        <Key ID="STR_kat_template_teleport">
+            <English>Teleport</English>
+            <German>Teleport</German>
+        </Key>
+        <Key ID="STR_kat_template_toSquad">
+            <English>to the Squad</English>
+            <German>zur Gruppe</German>
+        </Key>
+        <Key ID="STR_kat_template_toPL">
+            <English>to the Platoon Leader</English>
+            <German>zum Zugführer</German>
+        </Key>
+    </Package>
+    <Package name="loadout">
+        <Key ID="STR_kat_template_loadout">
+            <English>Loadout</English>
+            <German>Ausrüstung</German>
+        </Key>
+        <Key ID="STR_kat_template_loadout_test">
+            <English>english</English>
+            <German>german</German>
+        </Key>
+    </Package>
+    <Package name="mission">
+        <Key ID="STR_kat_template_onLoadName">
+            <English>Template Malden</English>
+            <German>Template Malden</German>
+        </Key>
+        <Key ID="STR_kat_template_loadout_overviewText">
+            <English>Mission template for NATO: 10-Man-Riflesquads, Weapon Teams, Logistic, Helicopter- und Tank Crew und Curator.</English>
+            <German>Missionstemplate für NATO: 10-Mann-Gruppen, Waffen Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus.</German>
+        </Key>
+        <Key ID="STR_kat_template_loadout_onLoadMission">
+            <English>Best of luck!</English>
+            <German>Viel Spaß!</German>
+        </Key>
+    </Package>
+    <Package name="debriefing">
+        <Key ID="STR_kat_template_end_win_title">
+            <English>Mission accomplished</English>
+            <German>Mission erfolgreich</German>
+        </Key>
+        <Key ID="STR_kat_template_end_lose_title">
+            <English>Mission failed</English>
+            <German>Mission gescheitert</German>
+        </Key>
+        <Key ID="STR_kat_template_end1_subtitle">
+            <English>Our mission continues</English>
+            <German>Auftrag erfüllt unsere Mission geht weiter</German>
+        </Key>
+        <Key ID="STR_kat_template_end1_description">
+            <English>We were able to fulfill our mission successfully.</English>
+            <German>Wir konnten unseren Auftrag erfolgreich erfüllen.</German>
+        </Key>
+        <Key ID="STR_kat_template_end2_subtitle">
+            <English>Order not fulfilled</English>
+            <German>Auftrag nicht erfüllt</German>
+        </Key>
+        <Key ID="STR_kat_template_end2_description">
+            <English>We could not fulfill our mission and failed.</English>
+            <German>Wir konnten unseren Auftrag nicht erfüllen und sind gescheitert.</German>
+        </Key>
+        <Key ID="STR_kat_template_end3_subtitle">
+            <English>You are out</English>
+            <German>Du bist raus</German>
+        </Key>
+        <Key ID="STR_kat_template_end3_description">
+            <English>The mission has failed (only) for you. Hopefully, your comrades will manage anyway.</English>
+            <German>Die Mission ist (nur) für dich gescheitert. Hoffentlich schaffen es deine Kameraden trotzdem.</German>
+        </Key>
+        <Key ID="STR_kat_template_end4_subtitle">
+            <English>You were successful</English>
+            <German>Du warst erfolgreich</German>
+        </Key>
+        <Key ID="STR_kat_template_end4_description">
+            <English>The mission is (only) made for you. Hopefully your comrades will manage it too.</English>
+            <German>Die Mission ist (nur) für dich geschafft. Hoffentlich schaffen es deine Kameraden auch noch.</German>
+        </Key>
+    </Package>
+</Project>
