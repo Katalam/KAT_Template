@@ -12,7 +12,7 @@ _player setVariable ["ACE_GForceCoef", 0.7, true];
 _player setVariable ["ACE_isEngineer", 2, true];
 _player setVariable ["ACE_isEOD", true, true];
 
-_player setUnitRank "CAPTAIN";
+_player setUnitRank "LIEUTENANT";
 
 /** CLOTHING */
 _player forceAddUniform UNIFORM_YELLOW;
@@ -83,6 +83,6 @@ for "_i" from 1 to 2 do {
     _player addItemToVest WEAPON_HGUN_AMMO;
 };
 
-[_player, ""] call BIS_fnc_setUnitInsignia;
+[_player, "KAT_Lieutenant"] call BIS_fnc_setUnitInsignia;
 
 true;

@@ -81,6 +81,6 @@ _player addWeapon WEAPON_HGUN;
 _player addHandgunItem "muzzle_snds_acp";
 _player addItemToUniform WEAPON_HGUN_AMMO;
 
-[_player, ""] call BIS_fnc_setUnitInsignia;
+[_player, "KAT_Sergeant"] call BIS_fnc_setUnitInsignia;
 
 true;

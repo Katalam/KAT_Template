@@ -54,6 +54,6 @@ _player addItemToUniform WEAPON_SMG_AMMO;
 _player addWeapon WEAPON_SMG;
 _player addItemToUniform WEAPON_SMG_AMMO;
 
-[_player, ""] call BIS_fnc_setUnitInsignia;
+[_player, "KAT_Sergeant"] call BIS_fnc_setUnitInsignia;
 
 true;

@@ -70,6 +70,6 @@ _player addWeaponItem [WEAPON_LAUNCHER, WEAPON_LAUNCHER_AMMO_HEAT];
 _player addItemToBackpack WEAPON_LAUNCHER_AMMO_HEAT;
 _player addItemToBackpack WEAPON_LAUNCHER_AMMO_HE;
 
-[_player, ""] call BIS_fnc_setUnitInsignia;
+[_player, "KAT_Private"] call BIS_fnc_setUnitInsignia;
 
 true;

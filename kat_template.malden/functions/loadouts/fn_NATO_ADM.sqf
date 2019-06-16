@@ -35,8 +35,8 @@ _player addItemToUniform "SmokeShell";
 _player addItemToUniform "SmokeShellGreen";
 
 /** PRIMARY */
-_player addWeapon WEAPON_RFM;
-WEAPON_RFM_STUFF apply {_player addWeaponItem [WEAPON_RFM, _x]};
+_player addWeapon WEAPON_CRW;
+WEAPON_CRW_STUFF apply {_player addWeaponItem [WEAPON_CRW, _x]};
 
 for "_i" from 1 to 4 do {
     _player addItemToVest WEAPON_RFM_AMMO;
@@ -69,6 +69,6 @@ for "_i" from 1 to 2 do {
     _player addItemToVest WEAPON_HGUN_AMMO;
 };
 
-[_player, ""] call BIS_fnc_setUnitInsignia;
+[_player, "Curator"] call BIS_fnc_setUnitInsignia;
 
 true;

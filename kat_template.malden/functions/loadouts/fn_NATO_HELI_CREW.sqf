@@ -61,6 +61,6 @@ _player addItemToUniform WEAPON_HGUN_AMMO;
 _player addWeapon WEAPON_HGUN;
 _player addItemToUniform WEAPON_HGUN_AMMO;
 
-[_player, ""] call BIS_fnc_setUnitInsignia;
+[_player, "KAT_Private"] call BIS_fnc_setUnitInsignia;
 
 true;
