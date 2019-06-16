@@ -17,18 +17,18 @@
  */
 
 params [
-	["_unit", objNull, [objNull]],
-	["_target", objNull, [objNull]]
+    ["_unit", objNull, [objNull]],
+    ["_target", objNull, [objNull]]
 ];
 
 if (vehicle _target != _target) then {
-	private _vehicle = vehicle _target;
+    private _vehicle = vehicle _target;
 
-	if (local _unit) then {
-		_unit moveInAny _vehicle;
-	} else {
-		[_unit, _vehicle] remoteExec ["moveInAny", _unit];
-	};
+    if (local _unit) then {
+        _unit moveInAny _vehicle;
+    } else {
+        [_unit, _vehicle] remoteExec ["moveInAny", _unit];
+    };
 } else {
-	_unit setPosATL (getPosATL _target);
+    _unit setPosATL (getPosATL _target);
 };

@@ -21,13 +21,13 @@
  */
 
 params [
-	["_vehicle", objNull, [objNull]],
-	["_loadoutName", "", [""]]
+    ["_vehicle", objNull, [objNull]],
+    ["_loadoutName", "", [""]]
 ];
 
 if (_loadoutName isEqualTo "empty" || {!isNil "crate_logistic" && _vehicle isEqualTo crate_logistic}) exitWith {
-	[_vehicle] call FUNC(clearVehicleInventory);
-	true;
+    [_vehicle] call FUNC(clearVehicleInventory);
+    true;
 };
 
 if (!local _vehicle) exitWith {false;};

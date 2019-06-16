@@ -16,16 +16,16 @@
  */
 
 params [
-	["_player", objNull, [objNull]]
+    ["_player", objNull, [objNull]]
 ];
 
 if (isServer) then {
-	private _logic = getAssignedCuratorLogic _player;
+    private _logic = getAssignedCuratorLogic _player;
 
-	if (!isNull(_logic)) then {
-		_logic addCuratorEditableObjects [allUnits, false];
-		_logic addCuratorEditableObjects [vehicles, true];
-	};
+    if (!isNull(_logic)) then {
+        _logic addCuratorEditableObjects [allUnits, false];
+        _logic addCuratorEditableObjects [vehicles, true];
+    };
 } else {
-	[_player] remoteExec [QFUNC(addToZeus), 2, false];
+    [_player] remoteExec [QFUNC(addToZeus), 2, false];
 };

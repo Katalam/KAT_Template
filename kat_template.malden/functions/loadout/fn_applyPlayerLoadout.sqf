@@ -18,26 +18,26 @@
  */
 
 params [
-	["_player", objNull, [objNull]],
-	["_loadoutName", "", [""]]
+    ["_player", objNull, [objNull]],
+    ["_loadoutName", "", [""]]
 ];
 
 if (_loadoutName in ["PRIVATE", "CORPORAL", "SERGEANT", "LIEUTENANT", "CAPTAIN", "MAJOR", "COLONEL"]) exitWith {
-	_player setUnitRank _loadoutName;
+    _player setUnitRank _loadoutName;
 };
 
 if (local _player) then {
-	if (isNil QGVAR(loadouts_player)) exitWith {};
+    if (isNil QGVAR(loadouts_player)) exitWith {};
 
-	private _loadout = [GVAR(loadouts_player), _loadoutName] call BIS_fnc_getFromPairs;
+    private _loadout = [GVAR(loadouts_player), _loadoutName] call BIS_fnc_getFromPairs;
 
-	if (isNil "_loadout") exitWith {};
+    if (isNil "_loadout") exitWith {};
 
-	[_player] call FUNC(clearPlayerInventory);
+    [_player] call FUNC(clearPlayerInventory);
 
-	[_player] call _loadout;
+    [_player] call _loadout;
 
-	[_loadoutName] call FUNC(setChannels);
+    [_loadoutName] call FUNC(setChannels);
 } else {
-	[_player, _loadoutName] remoteExec [QFUNC(applyPlayerLoadout), _player];
+    [_player, _loadoutName] remoteExec [QFUNC(applyPlayerLoadout), _player];
 };

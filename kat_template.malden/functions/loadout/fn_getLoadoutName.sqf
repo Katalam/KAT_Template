@@ -17,17 +17,17 @@
  */
 
 params [
-	["_string", "", ["", objNull]]
+    ["_string", "", ["", objNull]]
 ];
 
 if (_string isEqualType objNull) then {
-	_string = str _string;
+    _string = str _string;
 };
 
 private _splits = [_string, "_"] call BIS_fnc_splitString;
 
 if (count _splits isEqualTo 1) exitWith {
-	_string;
+    _string;
 };
 
 private _lastSplit = _splits select (count _splits - 1);

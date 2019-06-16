@@ -16,21 +16,21 @@
  */
 
 params [
-	["_unit", objNull, [objNull]]
+    ["_unit", objNull, [objNull]]
 ];
 
 if (local _unit) then {
-	if !(isPlayer _unit) then {
-		_unit setSkill ["general", 1];
-		_unit setSkill ["commanding", 1];
-		_unit setSkill ["courage", 0.9];
-		_unit setSkill ["aimingAccuracy", 0.45];
-		_unit setSkill ["aimingShake", 0.45];
-		_unit setSkill ["aimingSpeed", 0.55];
-		_unit setSkill ["reloadSpeed", 0.8];
-		_unit setSkill ["spotDistance", 1];
-		_unit setSkill ["spotTime", 0.65];
+    if !(isPlayer _unit) then {
+        _unit setSkill ["general", 1];
+        _unit setSkill ["commanding", 1];
+        _unit setSkill ["courage", 0.9];
+        _unit setSkill ["aimingAccuracy", 0.45];
+        _unit setSkill ["aimingShake", 0.45];
+        _unit setSkill ["aimingSpeed", 0.55];
+        _unit setSkill ["reloadSpeed", 0.8];
+        _unit setSkill ["spotDistance", 1];
+        _unit setSkill ["spotTime", 0.65];
     };
 } else {
-	[_unit] remoteExec [QFUNC(setSkill), _unit, false];
+    [_unit] remoteExec [QFUNC(setSkill), _unit, false];
 };

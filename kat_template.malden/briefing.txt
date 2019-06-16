@@ -1,10 +1,10 @@
 <p><span style="font-size:20px"><strong><u>Allgemeines</u></strong></span></p>
 
 <ul>
-	<li>Missionsbauer:&nbsp;Katalam</li>
-	<li>Map:&nbsp;MAP</li>
-	<li>Spieleranzahl:&nbsp;Anzahl der Spieler in der Mission, Zeus-Plätze werden extra angegeben (Beispiel bei 39 Spielern und 1 Zeus: 39+1)</li>
-	<li>Benötigte Repositories:
+    <li>Missionsbauer:&nbsp;Katalam</li>
+    <li>Map:&nbsp;MAP</li>
+    <li>Spieleranzahl:&nbsp;Anzahl der Spieler in der Mission, Zeus-Plätze werden extra angegeben (Beispiel bei 39 Spielern und 1 Zeus: 39+1)</li>
+    <li>Benötigte Repositories:
     <ul>
         <li>Tactical Training Team Standard</li>
         <li>Tactical Training Team - CUP</li>
@@ -65,20 +65,20 @@ test
 <p>[collapsed title=Fahrzeuge]</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:762px">
-	<thead>
-		<tr>
-			<th scope="col" style="width:131px">Fahrzeug</th>
-			<th scope="col" style="width:190px">Beschreibung</th>
-			<th scope="col" style="width:190px">&nbsp;</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td style="width:131px">Anzahl</td>
-			<td style="width:190px">Typ</td>
-			<td style="width:190px">Standort, Verwendung durch Teileinheit XYZ, Ausrüstung &amp; Ersatzteile, Besonderheiten</td>
-		</tr>
-	</tbody>
+    <thead>
+        <tr>
+            <th scope="col" style="width:131px">Fahrzeug</th>
+            <th scope="col" style="width:190px">Beschreibung</th>
+            <th scope="col" style="width:190px">&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="width:131px">Anzahl</td>
+            <td style="width:190px">Typ</td>
+            <td style="width:190px">Standort, Verwendung durch Teileinheit XYZ, Ausrüstung &amp; Ersatzteile, Besonderheiten</td>
+        </tr>
+    </tbody>
 </table>
 
 <p>[/collapsed]</p>
@@ -86,20 +86,20 @@ test
 <p>[collapsed title=Material]</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="height:55px; width:635px">
-	<thead>
-		<tr>
-			<th scope="col" style="width:134px">Material</th>
-			<th scope="col" style="width:207px">Beschreibung</th>
-			<th scope="col" style="width:207px">&nbsp;</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td style="width:134px">Anzahl</td>
-			<td style="width:207px">Typ</td>
-			<td style="width:273px">Standort, Inhalt, Besonderheiten</td>
-		</tr>
-	</tbody>
+    <thead>
+        <tr>
+            <th scope="col" style="width:134px">Material</th>
+            <th scope="col" style="width:207px">Beschreibung</th>
+            <th scope="col" style="width:207px">&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="width:134px">Anzahl</td>
+            <td style="width:207px">Typ</td>
+            <td style="width:273px">Standort, Inhalt, Besonderheiten</td>
+        </tr>
+    </tbody>
 </table>
 
 <p>[/collapsed]</p>
@@ -178,55 +178,55 @@ Eventuelle Bilder zur Kommandostruktur oder Funkstruktur.<br />
 Beispiel:</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
-	<thead>
-		<tr>
-			<th colspan="1" rowspan="2" scope="col">Einheit</th>
-			<th colspan="4" scope="col">Funkfrequenz</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td class="rtecenter">&nbsp;</td>
-			<td class="rtecenter">SR</td>
-			<td class="rtecenter">ASR</td>
-			<td class="rtecenter">LR</td>
-		</tr>
-		<tr>
-			<td class="rtecenter">Alpha</td>
-			<td class="rtecenter">114</td>
-			<td class="rtecenter">110</td>
-			<td class="rtecenter" colspan="2">41</td>
-		</tr>
-	</tbody>
+    <thead>
+        <tr>
+            <th colspan="1" rowspan="2" scope="col">Einheit</th>
+            <th colspan="4" scope="col">Funkfrequenz</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="rtecenter">&nbsp;</td>
+            <td class="rtecenter">SR</td>
+            <td class="rtecenter">ASR</td>
+            <td class="rtecenter">LR</td>
+        </tr>
+        <tr>
+            <td class="rtecenter">Alpha</td>
+            <td class="rtecenter">114</td>
+            <td class="rtecenter">110</td>
+            <td class="rtecenter" colspan="2">41</td>
+        </tr>
+    </tbody>
 </table>
 
 <p>oder</p>
 
 <table border="1" cellpadding="1" cellspacing="1" style="width:500px">
-	<thead>
-		<tr>
-			<th scope="col">Funkkreis</th>
-			<th scope="col">Funkfrequenz</th>
-			<th scope="col">Teilnehmer</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Zugführungskreis</td>
-			<td>SR 110</td>
-			<td>Alpha. Bravo, Charlie</td>
-		</tr>
-		<tr>
-			<td>Unterstützungskreis</td>
-			<td>LR 30</td>
-			<td>Hammer, Dagger</td>
-		</tr>
-		<tr>
-			<td>Versorgungskreis</td>
-			<td>LR 40</td>
-			<td>Starlight, Dustoff</td>
-		</tr>
-	</tbody>
+    <thead>
+        <tr>
+            <th scope="col">Funkkreis</th>
+            <th scope="col">Funkfrequenz</th>
+            <th scope="col">Teilnehmer</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Zugführungskreis</td>
+            <td>SR 110</td>
+            <td>Alpha. Bravo, Charlie</td>
+        </tr>
+        <tr>
+            <td>Unterstützungskreis</td>
+            <td>LR 30</td>
+            <td>Hammer, Dagger</td>
+        </tr>
+        <tr>
+            <td>Versorgungskreis</td>
+            <td>LR 40</td>
+            <td>Starlight, Dustoff</td>
+        </tr>
+    </tbody>
 </table>
 
 <hr />
@@ -237,10 +237,10 @@ Beispiel:</p>
 <p><span style="font-size:14px"><strong>Trupp&nbsp;<em>"</em><em>Truppname</em>",&nbsp;Trupprolle |&nbsp;SR&nbsp;SR-Frequenz, LR&nbsp;LR-Frequenz</strong></span></p>
 
 <ol>
-	<li>Truppposition 1</li>
-	<li>Truppposition 2</li>
-	<li>Truppposition 3</li>
-	<li>usw.</li>
+    <li>Truppposition 1</li>
+    <li>Truppposition 2</li>
+    <li>Truppposition 3</li>
+    <li>usw.</li>
 </ol>
 
 <hr />
@@ -251,8 +251,8 @@ Hier kann auch noch unterteilt werden zwischen Technische und spielerische Infor
 Das Arbeiten mit Spoilern bietet sich auch hier an</span></em></p>
 
 <ul>
-	<li><span style="font-size:12px">ACE-Lifetime / Medic-System-Einstellungen</span></li>
-	<li><span style="font-size:12px">Position des technischen Teleports</span></li>
-	<li><span style="font-size:12px">alles, was von unseren Standardeinstellungen abweicht</span></li>
-	<li><span style="font-size:12px">alles, was man sonst so zu der Mission wissen sollte und bisher noch nicht erwähnt wurde</span><em><span style="font-size:12px"> </span></em></li>
+    <li><span style="font-size:12px">ACE-Lifetime / Medic-System-Einstellungen</span></li>
+    <li><span style="font-size:12px">Position des technischen Teleports</span></li>
+    <li><span style="font-size:12px">alles, was von unseren Standardeinstellungen abweicht</span></li>
+    <li><span style="font-size:12px">alles, was man sonst so zu der Mission wissen sollte und bisher noch nicht erwähnt wurde</span><em><span style="font-size:12px"> </span></em></li>
 </ul>

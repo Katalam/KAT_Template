@@ -19,31 +19,31 @@
 GVAR(spawnProtectPos) = [0, 0, 0];
 
 switch (side player) do {
-	case west: {
-		GVAR(spawnProtectPos) = getMarkerPos "respawn_west";
-	};
-	case east: {
-		GVAR(spawnProtectPos) = getMarkerPos "respawn_east";
-	};
-	case independent: {
-		GVAR(spawnProtectPos) = getMarkerPos "respawn_guerrila";
-	};
-	case civilian: {
-		GVAR(spawnProtectPos) = getMarkerPos "respawn_civilian";
-	};
+    case west: {
+        GVAR(spawnProtectPos) = getMarkerPos "respawn_west";
+    };
+    case east: {
+        GVAR(spawnProtectPos) = getMarkerPos "respawn_east";
+    };
+    case independent: {
+        GVAR(spawnProtectPos) = getMarkerPos "respawn_guerrila";
+    };
+    case civilian: {
+        GVAR(spawnProtectPos) = getMarkerPos "respawn_civilian";
+    };
 };
 
 if (GVAR(spawnProtectPos) isEqualTo [0, 0, 0]) exitWith {};
 
 [typeOf player, "Fired", {
-	params ["_unit", "_weapon", "", "", "", "_magazine", "_projectile"];
+    params ["_unit", "_weapon", "", "", "", "_magazine", "_projectile"];
 
-	if (_weapon isEqualTo "Throw") then {
-		if (_unit isEqualTo player) then {
-			if ((_unit distance2D GVAR(spawnProtectPos)) < 75) then {
-				deleteVehicle _projectile;
-				_unit addMagazine [_magazine, 1];
-			};
-		};
-	};
+    if (_weapon isEqualTo "Throw") then {
+        if (_unit isEqualTo player) then {
+            if ((_unit distance2D GVAR(spawnProtectPos)) < 75) then {
+                deleteVehicle _projectile;
+                _unit addMagazine [_magazine, 1];
+            };
+        };
+    };
 }] call CBA_fnc_addClassEventHandler;

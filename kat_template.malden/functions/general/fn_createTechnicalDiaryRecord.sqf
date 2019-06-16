@@ -19,7 +19,7 @@ if !(hasInterface) exitWith {};
 
 private _advancedWounds = "müssen nicht";
 if (GETMVAR(ace_medical_enableAdvancedWounds,false)) then {
-	_advancedWounds = "können";
+    _advancedWounds = "können";
 };
 
 private _maxReviveTime = GETMVAR(ace_medical_maxReviveTime,600);

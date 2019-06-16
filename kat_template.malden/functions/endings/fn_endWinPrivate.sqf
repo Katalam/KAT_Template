@@ -16,7 +16,7 @@
  */
 
 params [
-	["_player", objNull, [objNull]]
+    ["_player", objNull, [objNull]]
 ];
 
 ["end4", true, true] remoteExec ["BIS_fnc_endMission", _player];

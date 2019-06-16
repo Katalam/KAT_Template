@@ -20,9 +20,9 @@
 if !(isServer) exitWith {};
 
 params [
-	["_bandages", 0, [0]],
-	["_pulse", 0, [0]],
-	["_cpr", 0, [0]]
+    ["_bandages", 0, [0]],
+    ["_pulse", 0, [0]],
+    ["_cpr", 0, [0]]
 ];
 
 GVAR(end_bandagesApplied) = GVAR(end_bandagesApplied) + _bandages;

@@ -26,20 +26,20 @@ wreckManagerMode = 0;
 minPlayerDistance = 75;
 
 class Header {
-	gameType = Coop;
-	minPlayers = 2;
-	maxPlayers = 74; // headless clients count too
+    gameType = Coop;
+    minPlayers = 2;
+    maxPlayers = 74; // headless clients count too
 };
 
 #include "CfgFunctions.hpp"
 #include "CfgDebriefing.hpp"
 
 class CfgRemoteExec {
-	class Commands {
-		mode = 2;
-	};
-	class Functions {
-		mode = 2;
-		jip = 1;
-	};
+    class Commands {
+        mode = 2;
+    };
+    class Functions {
+        mode = 2;
+        jip = 1;
+    };
 };

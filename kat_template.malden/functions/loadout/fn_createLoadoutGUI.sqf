@@ -20,7 +20,7 @@ if (!hasInterface) exitWith {};
 if (isNil QGVAR(gui_player_loadouts)) exitWith {};
 
 params [
-	["_object", objNull, [objNull]]
+    ["_object", objNull, [objNull]]
 ];
 
 private "_currentParent";
@@ -29,17 +29,17 @@ private "_currentParent";
 
 // Loadout GUI
 [_object, 0, [],
-	[QGVAR(loadoutActionParent), localize LSTRING(loadout), "", {}, {true}, {}, [], [0, -0.2, 0.4]] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutActionParent), localize LSTRING(loadout), "", {}, {true}, {}, [], [0, -0.2, 0.4]] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 {
-	if (_x isEqualType "") then {
-		_currentParent = [_object, 0, [QGVAR(loadoutActionParent)],
-			[QGVAR(loadoutAction) + (str _forEachIndex), _x, "", {}, {true}] call ace_interact_menu_fnc_createAction
-		] call ace_interact_menu_fnc_addActionToObject;
-	} else {
-		[_object, 0, _currentParent,
-			[QGVAR(loadoutAction) + (str _forEachIndex), _x select 0, "", {[player, _this select 2] call FUNC(applyPlayerLoadout);}, {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
-		] call ace_interact_menu_fnc_addActionToObject;
-	};
+    if (_x isEqualType "") then {
+        _currentParent = [_object, 0, [QGVAR(loadoutActionParent)],
+            [QGVAR(loadoutAction) + (str _forEachIndex), _x, "", {}, {true}] call ace_interact_menu_fnc_createAction
+        ] call ace_interact_menu_fnc_addActionToObject;
+    } else {
+        [_object, 0, _currentParent,
+            [QGVAR(loadoutAction) + (str _forEachIndex), _x select 0, "", {[player, _this select 2] call FUNC(applyPlayerLoadout);}, {true}, {}, _x select 1] call ace_interact_menu_fnc_createAction
+        ] call ace_interact_menu_fnc_addActionToObject;
+    };
 } forEach GVAR(gui_player_loadouts);
