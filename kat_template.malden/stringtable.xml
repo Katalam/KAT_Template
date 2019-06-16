@@ -83,6 +83,22 @@
             <English>Best of luck!</English>
             <German>Viel Spaß!</German>
         </Key>
+        <Key ID="STR_kat_template_nightvision">
+            <English>Night combat equipment</English>
+            <German>Nachtkampfausrüstung</German>
+        </Key>
+        <Key ID="STR_kat_template_nightvision_0">
+            <English>No Night combat equipment</English>
+            <German>Keine Nachtkampfausrüstung</German>
+        </Key>
+        <Key ID="STR_kat_template_nightvision_1">
+            <English>Lamps and Flares</English>
+            <German>Lampen und Flares</German>
+        </Key>
+        <Key ID="STR_kat_template_nightvision_2">
+            <English>Night vision goggles and IR-Laser</English>
+            <German>Nachtsichtgeräte und IR-Laser</German>
+        </Key>
     </Package>
     <Package name="debriefing">
         <Key ID="STR_kat_template_end_win_title">
