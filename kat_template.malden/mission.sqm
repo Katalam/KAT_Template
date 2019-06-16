@@ -301,7 +301,7 @@ class AddonsMetaData
 randomSeed=6228405;
 class ScenarioData
 {
-	author="[SeL] Sinus";
+	author="Katalam";
 };
 class CustomAttributes
 {

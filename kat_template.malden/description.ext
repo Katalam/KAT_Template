@@ -1,16 +1,19 @@
 /*
  * Author: Katalam
+ * No #include here because bohemia.
+ * Since latest filePatching security update it isn't allowed anymore in description.ext
+ * config.cpp is fine.
  */
 
-author = "A.Katalam"; // mission author
+author = $STR_kat_template_author; // mission author
 OnLoadName = $STR_kat_template_onLoadName; // mission title
 
 // choose-mission-screen description
 overviewText = $STR_kat_template_loadout_overviewText;
 
 onLoadMission = $STR_kat_template_loadout_onLoadMission;
-//loadScreen = "logo.paa";
-//overviewPicture = "logo.paa";
+//loadScreen = "";
+//overviewPicture = "";
 enableDebugConsole = 1;
 respawn = 3;
 respawnDelay = 5;

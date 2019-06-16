@@ -47,6 +47,14 @@
             <English>to the Platoon Leader</English>
             <German>zum Zugführer</German>
         </Key>
+        <Key ID="STR_kat_template_switchDoor">
+            <English>Switch Doors</English>
+            <German>Tür öffnen/schließen</German>
+        </Key>
+        <Key ID="STR_kat_template_switchGun">
+            <English>Switch Gunbag</English>
+            <German>Wechsle Waffen</German>
+        </Key>
     </Package>
     <Package name="loadout">
         <Key ID="STR_kat_template_loadout">
@@ -59,6 +67,10 @@
         </Key>
     </Package>
     <Package name="mission">
+        <Key ID="STR_kat_template_author">
+            <English>Katalam</English>
+            <German>Katalam</German>
+        </Key>
         <Key ID="STR_kat_template_onLoadName">
             <English>Template Malden</English>
             <German>Template Malden</German>

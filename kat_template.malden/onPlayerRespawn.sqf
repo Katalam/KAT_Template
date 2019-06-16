@@ -11,10 +11,10 @@ private _loadoutName = [str player] call FUNC(getLoadoutName);
 
 // Close BI's spectator that may be open
 if (player getVariable [QGVAR(isSpectator), false]) then {
-	["Terminate"] call BIS_fnc_EGSpectator;
+    ["Terminate"] call BIS_fnc_EGSpectator;
 
-	[player, false] remoteExec ["hideObjectGlobal", 2, false];
-	player setCaptive false;
+    [player, false] remoteExec ["hideObjectGlobal", 2, false];
+    player setCaptive false;
 
-	player setVariable [QGVAR(isSpectator), false, false];
+    player setVariable [QGVAR(isSpectator), false, false];
 };

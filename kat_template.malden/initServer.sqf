@@ -16,7 +16,7 @@ forceWeatherChange;
 
 // add server side event handlers for the statistics at mission end
 if (isDedicated) then {
-	call FUNC(setUpStatistic);
+    call FUNC(setUpStatistic);
     [flagTP] call FUNC(createTeleporter);
     [crate_logistic] call FUNC(createCrateSpawn);
 };
@@ -31,8 +31,8 @@ call FUNC(prepareLoadouts);
 
 // fill editor placed vehicles with loadout
 {
-	if !(isNil str _x) then {
-		private _loadoutName = [str _x] call FUNC(getLoadoutName);
-		[_x, _loadoutName] call FUNC(applyVehicleLoadout);
-	};
+    if !(isNil str _x) then {
+        private _loadoutName = [str _x] call FUNC(getLoadoutName);
+        [_x, _loadoutName] call FUNC(applyVehicleLoadout);
+    };
 } count entities [["Helicopter", "Plane", "Tank", "Car", "Ship", "ReammoBox_F"], []];
