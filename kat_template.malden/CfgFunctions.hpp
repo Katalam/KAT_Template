@@ -11,6 +11,7 @@ class CfgFunctions {
             class addAresHelpers;
             class addToZeus;
             class heal;
+            class initializeUI;
             class setUpDiaryScripts;
         };
         class ai {

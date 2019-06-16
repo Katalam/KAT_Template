@@ -62,7 +62,7 @@ params [
         [(call TFAR_fnc_activeLRRadio), 7] call TFAR_fnc_setLRChannel;
     };
 
-    if (_loadoutName in ["NATO_JTAC", "NATO_FO"]) then {
+    if (_loadoutName in ["NATO_JFO"]) then {
         [(call TFAR_fnc_activeLRRadio), 6] call TFAR_fnc_setLRChannel;
     };
 }, [_loadoutName], 30] call CBA_fnc_waitUntilAndExecute;

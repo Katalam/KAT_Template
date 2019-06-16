@@ -17,18 +17,18 @@
 
 if !(hasInterface) exitWith {};
 
-[QGVAR(helperScripts), localize LSTRING(captive),
+["KAT Template Helper", localize LSTRING(captive),
         {[_this select 1, true] remoteExec ["setCaptive", _this select 1, true];}
 ] call Ares_fnc_RegisterCustomModule;
 
-[QGVAR(helperScripts), localize LSTRING(decaptive),
+["KAT Template Helper", localize LSTRING(decaptive),
         {[_this select 1, false] remoteExec ["setCaptive", _this select 1, true];}
 ] call Ares_fnc_RegisterCustomModule;
 
-[QGVAR(helperScripts), localize LSTRING(endWinNice),
+["KAT Template Helper", localize LSTRING(endWinNice),
         {[] remoteExec [QFUNC(endWinNice), 0, false];}
 ] call Ares_fnc_RegisterCustomModule;
 
-[QGVAR(helperScripts), localize LSTRING(endLose),
+["KAT Template Helper", localize LSTRING(endLose),
         {[] remoteExec [QFUNC(endLose), 2, false];}
 ] call Ares_fnc_RegisterCustomModule;

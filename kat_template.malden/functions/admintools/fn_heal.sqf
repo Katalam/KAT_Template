@@ -19,4 +19,4 @@ if (isDedicated) exitWith {};
 
 player setDamage 0;
 [player, player] call ACEFUNC(medical,treatmentAdvanced_fullHealLocal);
-//player setVariable ["adv_aceSplint_reopenUndo", true];
+player setVariable ["adv_aceSplint_reopenUndo", true];

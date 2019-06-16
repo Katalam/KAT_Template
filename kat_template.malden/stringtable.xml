@@ -14,7 +14,7 @@
             <German>Gewinne mit Statistik</German>
         </Key>
         <Key ID="STR_kat_template_endLose">
-            <English>End w/ lose</English>
+            <English>End lose</English>
             <German>Verlierer Ende</German>
         </Key>
     </Package>

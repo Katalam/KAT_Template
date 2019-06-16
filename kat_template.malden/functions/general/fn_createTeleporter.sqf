@@ -41,7 +41,7 @@ private _tpCodeSquad = {
         private _grp = (units group player) select {alive _x && !(_x getVariable ["ACE_isUnconscious", false]) && (_x distance player) > 500};
 
         if (_grp isEqualTo []) exitWith {
-            [localize LSTRING(groupNear), 2] call ACEFUNC(common,displayTextStructured);
+            [localize LSTRING(groupNear), 2.5] call ACEFUNC(common,displayTextStructured);
         };
 
         _target = selectRandom _grp;
