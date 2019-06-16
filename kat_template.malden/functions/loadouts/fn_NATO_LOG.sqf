@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: [SeL] Sinus
+ * Author: Katalam
  * Loadout - NATO: Logistic Assistant
  */
 
@@ -15,11 +15,11 @@ _player setVariable ["ACE_isEOD", false, true];
 _player setUnitRank "PRIVATE";
 
 /** CLOTHING */
-_player forceAddUniform "U_B_CombatUniform_mcam";
-_player addVest "V_TacVest_blk";
-_player addHeadgear "H_HelmetB_sand";
-_player addItemToVest "H_Cap_oli";
-_player addBackpackGlobal "B_Assaultpack_blk";
+_player forceAddUniform UNIFORM_SILVER;
+_player addVest VEST_CRW;
+_player addItemToVest HELMET_CAP;
+_player addHeadgear HELMET_1;
+_player addBackpackGlobal BACKPACK_COMPACT;
 
 /** COMMS */
 _player linkItem "ItemMap";
@@ -33,48 +33,41 @@ _player addItemToVest "ACE_key_west";
 _player addItemToBackpack "Toolkit";
 
 /** MEDICAL */
-for "_i" from 1 to 10 do {
-	_player addItemToUniform "ACE_fieldDressing";
-};
-for "_i" from 1 to 2 do {
-	_player addItemToUniform "ACE_tourniquet";
-};
-_player addItemToUniform "ACE_morphine";
+MEDICAL_RFM;
 
 /** THROWABLES */
 for "_i" from 1 to 2 do {
-	_player addItemToUniform "SmokeShell";
+    _player addItemToUniform "SmokeShell";
 };
 _player addItemToUniform "SmokeShellGreen";
 
 /** PRIMARY */
-_player addItemToVest "30Rnd_65x39_caseless_mag";
-
-_player addWeapon selectRandom ["arifle_MXC_Black_F", "arifle_MXC_F"];
+_player addWeapon WEAPON_CRW;
+WEAPON_CRW_STUFF apply {_player addWeaponItem [WEAPON_CRW, _x]};
 
 for "_i" from 1 to 4 do {
-	_player addItemToVest "30Rnd_65x39_caseless_mag";
+    _player addItemToVest WEAPON_RFM_AMMO;
 };
 
 /** NIGHT FIGHT STUFF */
 switch (["GearLevel", 0] call BIS_fnc_getParamValue) do {
     case 1: {
-		_player addPrimaryWeaponItem "acc_flashlight";
-		_player addItemToUniform "ACE_Flashlight_KSF1";
-	};
+        _player addPrimaryWeaponItem "acc_flashlight";
+        _player addItemToUniform "ACE_Flashlight_KSF1";
+    };
     case 2: {
-		_player addPrimaryWeaponItem "acc_pointer_IR";
-		_player addItemToUniform "ACE_Flashlight_KSF1";
-		_player linkItem "ACE_NVG_Wide";
-	};
+        _player addPrimaryWeaponItem "acc_pointer_IR";
+        _player addItemToUniform "ACE_Flashlight_KSF1";
+        _player linkItem "ACE_NVG_Wide";
+    };
     default {};
 };
 
 /** SIDEARM */
-_player addItemToUniform "11Rnd_45ACP_Mag";
-_player addWeapon "hgun_Pistol_heavy_01_F";
-_player addItemToUniform "11Rnd_45ACP_Mag";
+_player addItemToUniform WEAPON_HGUN_AMMO;
+_player addWeapon WEAPON_HGUN;
+_player addItemToUniform WEAPON_HGUN_AMMO;
 
-[_player,"ADV_insignia_usarmy_00"] call BIS_fnc_setUnitInsignia;
+[_player, ""] call BIS_fnc_setUnitInsignia;
 
 true;

@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: [SeL] Sinus
+ * Author: Sinus
  * Loadout - NATO: Granaten-Kiste
  */
 
@@ -16,7 +16,7 @@ _box addItemCargoGlobal ["ACE_HandFlare_Yellow", 8];
 _box addItemCargoGlobal ["ACE_M84", 8];
 _box addItemCargoGlobal ["ACE_M14", 8];
 
-_box addMagazineCargoGlobal ["1Rnd_HE_Grenade_shell", 8];
+_box addMagazineCargoGlobal [WEAPON_UGL_AMMO, 8];
 _box addMagazineCargoGlobal ["1Rnd_SmokeRed_Grenade_shell", 8];
 _box addMagazineCargoGlobal ["1Rnd_SmokePurple_Grenade_shell", 8];
 _box addMagazineCargoGlobal ["1Rnd_SmokeBlue_Grenade_shell", 8];

@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: [SeL] Sinus
+ * Author: Katalam
  * Loadout - NATO: Repair Vehicle
  */
 

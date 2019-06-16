@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Loadout - NATO: Sniper
+ * Loadout - NATO: Joint Fires Observer
  */
 
 params [["_player", objNull, [objNull]]];
@@ -15,21 +15,24 @@ _player setVariable ["ACE_isEOD", false, true];
 _player setUnitRank "SERGEANT";
 
 /** CLOTHING */
-_player forceAddUniform UNIFORM_BLACK;
-_player addVest VEST_BLACK;
-_player addHeadgear HELMET_3;
+_player forceAddUniform UNIFORM_YELLOW;
+_player addVest VEST_YELLOW;
+_player addHeadgear HELMET_4;
 
 /** COMMS */
+_player addBackpackGlobal "TFAR_rt1523g_rhs";
 _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
 _player linkItem "ItemAndroid";
 _player linkItem "TFAR_anprc152";
+
 for "_i" from 1 to 2 do {
     _player addItemToVest "ACE_CableTie";
 };
 _player addItemToVest "ACE_MapTools";
-_player addItemToVest "ACE_RangeCard";
+_player addItemToBackpack "Laserbatteries";
+_player addItemToBackpack "Laserdesignator";
 
 /** MEDICAL */
 MEDICAL_RFM;
@@ -42,43 +45,45 @@ for "_i" from 1 to 2 do {
 };
 
 /** PRIMARY */
-_player addWeapon WEAPON_RFM;
-(WEAPON_RFM_STUFF + ["muzzle_snds_H_snd_F"]) apply {_player addWeaponItem [WEAPON_RFM, _x]};
+_player addWeapon WEAPON_UGL;
+WEAPON_UGL_STUFF apply {_player addWeaponItem [WEAPON_UGL, _x]};
 
-for "_i" from 1 to 4 do {
+for "_i" from 1 to 7 do {
     _player addItemToVest WEAPON_RFM_AMMO;
 };
-for "_i" from 1 to 4 do {
-    _player addItemToVest (WEAPON_SNI_AMMO select 0);
-};
 
-/** GUN BAG */
-_player addBackpackGlobal "ace_gunbag_tan";
-private _gunbagContainer = backpackContainer _player;
-private _gunBagInv = [WEAPON_SNI, WEAPON_SNI_STUFF, [WEAPON_SNI_AMMO]];
-_gunbagContainer setVariable ["ace_gunbag_gunbagWeapon", _gunBagInv, true];
+for "_i" from 1 to 4 do {
+    _player addItemToVest "1Rnd_SmokePurple_Grenade_shell";
+};
+for "_i" from 1 to 2 do {
+    _player addItemToVest "1Rnd_SmokeRed_Grenade_shell";
+    _player addItemToVest "1Rnd_SmokeBlue_Grenade_shell";
+};
 
 /** NIGHT FIGHT STUFF */
 switch (["GearLevel", 0] call BIS_fnc_getParamValue) do {
     case 1: {
+        _player addWeapon "ACE_VectorDay";
+        _player addPrimaryWeaponItem "acc_flashlight";
         _player addItemToUniform "ACE_Flashlight_KSF1";
         _player addItemToUniform "ACE_HandFlare_Yellow";
     };
     case 2: {
+        _player addWeapon "ACE_Vector";
+        _player addPrimaryWeaponItem "acc_pointer_IR";
         _player addItemToUniform "ACE_Flashlight_KSF1";
         _player linkItem "ACE_NVG_Wide";
         _player addItemToUniform "ACE_IR_Strobe_Item";
     };
     default {
+        _player addWeapon "ACE_VectorDay";
         _player addItemToUniform "SmokeShellOrange";
     };
 };
 
-
 /** SIDEARM */
 _player addItemToUniform WEAPON_HGUN_AMMO;
 _player addWeapon WEAPON_HGUN;
-_player addHandgunItem "muzzle_snds_acp";
 _player addItemToUniform WEAPON_HGUN_AMMO;
 
 [_player, ""] call BIS_fnc_setUnitInsignia;

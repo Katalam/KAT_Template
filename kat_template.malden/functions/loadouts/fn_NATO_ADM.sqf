@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: [SeL] Sinus
+ * Author: Katalam
  * Loadout - NATO: Admin / Gamemaster
  */
 
@@ -15,9 +15,9 @@ _player setVariable ["ACE_isEOD", true, true];
 _player setUnitRank "COLONEL";
 
 /** CLOTHING */
-_player forceAddUniform UNIFORM_1;
-_player addVest "V_TacVest_blk";
-_player addHeadgear "H_Beret_02";
+_player forceAddUniform UNIFORM_YELLOW;
+_player addVest VEST_CRW;
+_player addHeadgear HELMET_YELLOW;
 
 /** COMMS */
 _player addBackpackGlobal "tfar_rt1523g_big_rhs";
@@ -28,55 +28,47 @@ _player linkItem "TFAR_anprc152";
 _player addItemToVest "ACE_MapTools";
 
 /** MEDICAL */
-for "_i" from 1 to 10 do {
-	_player addItemToUniform "ACE_fieldDressing";
-};
-for "_i" from 1 to 2 do {
-	_player addItemToUniform "ACE_tourniquet";
-};
-_player addItemToUniform "ACE_morphine";
+MEDICAL_RFM;
 
 /** THROWABLES */
 _player addItemToUniform "SmokeShell";
 _player addItemToUniform "SmokeShellGreen";
 
 /** PRIMARY */
-_player addItemToVest "30Rnd_65x39_caseless_mag";
-
-_player addWeapon selectRandom ["arifle_MXC_Black_F", "arifle_MXC_F"];
-_player addPrimaryWeaponItem "optic_ACO_grn";
+_player addWeapon WEAPON_RFM;
+WEAPON_RFM_STUFF apply {_player addWeaponItem [WEAPON_RFM, _x]};
 
 for "_i" from 1 to 4 do {
-	_player addItemToVest "30Rnd_65x39_caseless_mag";
+    _player addItemToVest WEAPON_RFM_AMMO;
 };
 
 /** NIGHT FIGHT STUFF */
 switch (["GearLevel", 0] call BIS_fnc_getParamValue) do {
     case 1: {
-		_player addPrimaryWeaponItem "acc_flashlight";
-		_player addItemToUniform "ACE_Flashlight_KSF1";
-		_player addItemToUniform "ACE_HandFlare_Yellow";
-	};
+        _player addPrimaryWeaponItem "acc_flashlight";
+        _player addItemToUniform "ACE_Flashlight_KSF1";
+        _player addItemToUniform "ACE_HandFlare_Yellow";
+    };
     case 2: {
-		_player addPrimaryWeaponItem "acc_pointer_IR";
-		_player addItemToUniform "ACE_Flashlight_KSF1";
-		_player linkItem "ACE_NVG_Wide";
-		_player addItemToUniform "ACE_IR_Strobe_Item";
-	};
+        _player addPrimaryWeaponItem "acc_pointer_IR";
+        _player addItemToUniform "ACE_Flashlight_KSF1";
+        _player linkItem "ACE_NVG_Wide";
+        _player addItemToUniform "ACE_IR_Strobe_Item";
+    };
     default {
-		_player addItemToUniform "SmokeShellOrange";
-	};
+        _player addItemToUniform "SmokeShellOrange";
+    };
 };
 
 /** SIDEARM */
-_player addItemToUniform "11Rnd_45ACP_Mag";
-_player addWeapon "hgun_Pistol_heavy_01_F";
+_player addItemToUniform WEAPON_HGUN_AMMO;
+_player addWeapon WEAPON_HGUN;
 _player addHandgunItem "optic_MRD";
-_player addItemToUniform "11Rnd_45ACP_Mag";
+_player addItemToUniform WEAPON_HGUN_AMMO;
 for "_i" from 1 to 2 do {
-	_player addItemToVest "11Rnd_45ACP_Mag";
+    _player addItemToVest WEAPON_HGUN_AMMO;
 };
 
-[_player,"ADV_insignia_usarmy_13"] call BIS_fnc_setUnitInsignia;
+[_player, ""] call BIS_fnc_setUnitInsignia;
 
 true;

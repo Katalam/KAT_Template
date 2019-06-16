@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: [SeL] Sinus
+ * Author: Katalam
  * Loadout - NATO: Tank Vehicle
  */
 
@@ -8,44 +8,34 @@ params [["_box", objNull, [objNull]]];
 
 ["ACE_Track", _box, 2] call ace_cargo_fnc_addCargoItem;
 
-_box addBackpackCargoGlobal ["B_Assaultpack_blk", 1];
-_box addBackpackCargoGlobal ["B_Kitbag_rgr", 1];
-_box addBackpackCargoGlobal ["B_Kitbag_cbr", 1];
+_box addBackpackCargoGlobal [BACKPACK_COMPACT, 1];
+_box addBackpackCargoGlobal [BACKPACK_KITBAG, 1];
+_box addBackpackCargoGlobal [BACKPACK_CARRYALL, 1];
 
 {
-	if (_forEachIndex isEqualTo 0) then {
-		_x addItemCargoGlobal ["ToolKit", 1];
-	};
+    if (_forEachIndex isEqualTo 0) then {
+        _x addItemCargoGlobal ["ToolKit", 1];
+    };
 
-	if (_forEachIndex isEqualTo 1) then {
-		_x addItemCargoGlobal ["ACE_fieldDressing", 32];
-		_x addItemCargoGlobal ["ACE_elasticBandage", 32];
-		_x addItemCargoGlobal ["ACE_morphine", 8];
-		_x addItemCargoGlobal ["ACE_epinephrine", 8];
-		_x addItemCargoGlobal ["ACE_tourniquet", 4];
-		_x addItemCargoGlobal ["ACE_plasmaIV_500", 12];
-	};
+    if (_forEachIndex isEqualTo 1) then {
+        _x addItemCargoGlobal ["ACE_packingBandage", 32];
+        _x addItemCargoGlobal ["ACE_elasticBandage", 32];
+        _x addItemCargoGlobal ["ACE_morphine", 8];
+        _x addItemCargoGlobal ["ACE_epinephrine", 8];
+        _x addItemCargoGlobal ["ACE_tourniquet", 4];
+        _x addItemCargoGlobal ["ACE_plasmaIV_500", 12];
+    };
 
-	if (_forEachIndex isEqualTo 2) then {
-		_x addItemCargoGlobal ["30Rnd_65x39_caseless_mag", 12];
-		_x addItemCargoGlobal ["1Rnd_HE_Grenade_shell", 12];
-		_x addItemCargoGlobal ["200Rnd_65x39_cased_Box_Tracer_red", 2];
-	};
+    if (_forEachIndex isEqualTo 2) then {
+        _x addItemCargoGlobal [WEAPON_RFM_AMMO, 12];
+        _x addItemCargoGlobal [WEAPON_UGL_AMMO, 12];
+        _x addItemCargoGlobal [WEAPON_LMG_AMMO, 2];
+    };
 } forEach (everyBackpack _box);
 
 /** LAUNCHER */
-switch (["LightLauncherEquipment", 0] call BIS_fnc_getParamValue) do {
-    case 1: {
-		_box addItemCargoGlobal ["launch_NLAW_F", 2];
-	};
-    default {
-		_box addItemCargoGlobal ["launch_MRAWS_green_F", 1];
-		_box addItemCargoGlobal ["MRAWS_HEAT_F", 3];
-		_box addItemCargoGlobal ["MRAWS_HE_F", 3];
-	};
-};
-
-_box addItemCargoGlobal ["adv_aceRefill_FAK", 5];
-_box addItemCargoGlobal ["adv_aceRefill_manualKit", 1];
+_box addItemCargoGlobal [WEAPON_LAUNCHER, 1];
+_box addItemCargoGlobal [WEAPON_LAUNCHER_AMMO_HEAT, 3];
+_box addItemCargoGlobal [WEAPON_LAUNCHER_AMMO_HE, 3];
 
 true;
