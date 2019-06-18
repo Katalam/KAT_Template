@@ -23,7 +23,7 @@
 
 ## Getting started
 
-To understand the code you have to start with this: [ACE Coding Guidelines](https://ace3mod.com/wiki/development/coding-guidelines.html) and continue here [Shedular and our Pratices](https://ace3mod.com/wiki/development/arma-3-scheduler-and-our-practices.html)
+To understand the code you have to start with this: [ACE Coding Guidelines](https://ace3mod.com/wiki/development/coding-guidelines.html) and continue here [Schedular and our Pratices](https://ace3mod.com/wiki/development/arma-3-scheduler-and-our-practices.html)
 Every not CBA Macro is defined here: [Script Component](https://github.com/Katalam/templates/blob/master/kat_template.malden/script_component.hpp)
 All Loadouts Macros are here: [Script Component](https://github.com/Katalam/templates/blob/master/kat_template.malden/functions/loadouts/script_component.hpp)
 
