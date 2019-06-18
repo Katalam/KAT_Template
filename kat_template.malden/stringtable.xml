@@ -55,6 +55,10 @@
             <English>Switch Gunbag</English>
             <German>Wechsle Waffen</German>
         </Key>
+        <Key ID="STR_kat_template_unflipVehicle">
+            <English>Unflip vehicle</English>
+            <German>Richte Fahrzeug auf</German>
+        </Key>
     </Package>
     <Package name="loadout">
         <Key ID="STR_kat_template_loadout">

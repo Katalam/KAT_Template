@@ -40,6 +40,7 @@ class CfgFunctions {
             class setUpLocations;
             class spawnProtection;
             class teleport;
+            class unflipVehicle;
         };
         class loadout {
             file = "functions\loadout";
