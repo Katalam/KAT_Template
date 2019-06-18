@@ -25,11 +25,11 @@ params [
 
 private "_currentParent";
 
-//_object setObjectTexture [0, "00.paa"];
+// [0, -0.2, 0.4] flag
 
 // Loadout GUI
 [_object, 0, [],
-    [QGVAR(loadoutActionParent), localize LSTRING(loadout), "", {}, {true}, {}, [], [0, -0.2, 0.4]] call ace_interact_menu_fnc_createAction
+    [QGVAR(loadoutActionParent), localize LSTRING(loadout), "", {}, {true}] call ace_interact_menu_fnc_createAction
 ] call ace_interact_menu_fnc_addActionToObject;
 
 {
