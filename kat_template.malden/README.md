@@ -1,7 +1,7 @@
 ## KAT Template
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Katalam/templates/master/logo.png">
+    <img src="https://raw.githubusercontent.com/Katalam/templates/master/kat_template.malden/logo.png">
 </p>
 
 <p align="center">
