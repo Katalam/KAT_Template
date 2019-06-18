@@ -1,5 +1,5 @@
 #include "script_component.hpp"
-﻿/*
+/*
  * Author: Sinus
  * Sets the units skill to high values. Execute where unit is local, has global effect.
  *

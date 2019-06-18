@@ -1,5 +1,5 @@
 #include "script_component.hpp"
-﻿/*
+/*
  * Author: Sinus
  * Makes the group 'defend': disables pathing until any targets are close (< 20 meters from group leader),
  * then attacks with about half of the groups initial strength.

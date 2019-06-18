@@ -21,8 +21,8 @@ if (isDedicated) then {
     [crate_logistic] call FUNC(createCrateSpawn);
 };
 
-//["Man", "InitPost", LINKFUNC(setSkill), true, [], true] call CBA_fnc_addClassEventHandler;
-//["Man", "InitPost", LINKFUNC(aiFrags), true, [], true] call CBA_fnc_addClassEventHandler;
+["Man", "InitPost", LINKFUNC(setSkill), true, [], true] call CBA_fnc_addClassEventHandler;
+["Man", "InitPost", LINKFUNC(aiFrags), true, [], true] call CBA_fnc_addClassEventHandler;
 
 GVAR(noLootingEVH) = call FUNC(noLooting);
 
