@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Loadout - NATO: L.Launcher-Kiste
+ * Loadout - NATO: L.Launcher-Crate
  */
 
 params [["_box", objNull, [objNull]]];

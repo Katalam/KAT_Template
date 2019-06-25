@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Loadout - NATO: Ausrüstungskiste
+ * Loadout - NATO: Equipment Crate
  */
 
 params [["_box", objNull, [objNull]]];

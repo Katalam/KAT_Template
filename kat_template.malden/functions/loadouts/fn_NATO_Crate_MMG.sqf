@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Loadout - NATO: MMG-Kiste
+ * Loadout - NATO: MMG-Crate
  */
 
 params [["_box", objNull, [objNull]]];

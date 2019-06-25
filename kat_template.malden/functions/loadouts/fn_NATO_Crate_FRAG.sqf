@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Sinus
- * Loadout - NATO: Granaten-Kiste
+ * Loadout - NATO: Grenade-Crate
  */
 
 params [["_box", objNull, [objNull]]];

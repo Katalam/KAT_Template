@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Loadout - NATO: H.Launcher-Munition
+ * Loadout - NATO: H.Launcher-Ammunition
  */
 
 params [["_box", objNull, [objNull]]];
