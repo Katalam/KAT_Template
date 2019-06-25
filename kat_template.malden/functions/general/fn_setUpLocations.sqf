@@ -29,7 +29,11 @@ if !(hasInterface) exitWith {};
             if ((count _splits) isEqualTo 2) then {
                 _loc setText (_x select [9]);
             } else {
-                _loc setText ((_x call FUNC(getLoadoutName)) select [9]);
+                if (_splits select 1 isEqualTo "STR") then {
+                    _loc setText (localize (_x select [9]));
+                } else {
+                    _loc setText ((_x call FUNC(getLoadoutName)) select [9]);
+                };
             };
 
             true;

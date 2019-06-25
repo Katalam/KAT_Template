@@ -17,6 +17,14 @@
             <English>End lose</English>
             <German>Verlierer Ende</German>
         </Key>
+        <Key ID="STR_kat_template_healAll">
+            <English>Heal all player</English>
+            <German>Heile alle Spieler</German>
+        </Key>
+        <Key ID="STR_kat_template_addToZeus">
+            <English>Add all entities to the zeus menu</English>
+            <German>Füge alle Objekte zum Zeus hinzu</German>
+        </Key>
     </Package>
     <Package name="general">
         <Key ID="STR_kat_template_spectator">
@@ -102,6 +110,22 @@
         <Key ID="STR_kat_template_nightvision_2">
             <English>Night vision goggles and IR-Laser</English>
             <German>Nachtsichtgeräte und IR-Laser</German>
+        </Key>
+        <Key ID="STR_kat_template_location_logistic">
+            <English>Logistic</English>
+            <German>Logistik</German>
+        </Key>
+        <Key ID="STR_kat_template_location_vehicles">
+            <English>Vehicles</English>
+            <German>Fahrzeuge</German>
+        </Key>
+        <Key ID="STR_kat_template_location_flag">
+            <English>Flag</English>
+            <German>Flagge</German>
+        </Key>
+        <Key ID="STR_kat_template_location_medical">
+            <English>Medical Area</English>
+            <German>Feldlazarett</German>
         </Key>
     </Package>
     <Package name="debriefing">
