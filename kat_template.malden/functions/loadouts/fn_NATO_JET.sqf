@@ -35,7 +35,7 @@ _player addItemToUniform "SmokeShell";
 _player addItemToUniform "SmokeShellGreen";
 
 /** NIGHT FIGHT STUFF */
-switch (["GearLevel", 0] call BIS_fnc_getParamValue) do {
+switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
     case 1: {
         _player addItemToUniform "ACE_HandFlare_Yellow";
         _player addItemToUniform "ACE_Flashlight_KSF1";
@@ -54,6 +54,6 @@ _player addItemToUniform WEAPON_SMG_AMMO;
 _player addWeapon WEAPON_SMG;
 _player addItemToUniform WEAPON_SMG_AMMO;
 
-[_player, "KAT_Sergeant"] call BIS_fnc_setUnitInsignia;
+[_player, "KAT_Sergeant"] call BISFUNC(setUnitInsignia);
 
 true;

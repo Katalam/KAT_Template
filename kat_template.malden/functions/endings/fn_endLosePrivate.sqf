@@ -19,4 +19,4 @@ params [
     ["_player", objNull, [objNull]]
 ];
 
-["end3", false, true] remoteExec ["BIS_fnc_endMission", _player];
+["end3", false, true] remoteExec [QBISFUNC(endMission), _player];

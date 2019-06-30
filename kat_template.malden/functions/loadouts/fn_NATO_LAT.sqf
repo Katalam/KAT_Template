@@ -46,7 +46,7 @@ for "_i" from 1 to 7 do {
 };
 
 /** NIGHT FIGHT STUFF */
-switch (["GearLevel", 0] call BIS_fnc_getParamValue) do {
+switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
     case 1: {
         _player addPrimaryWeaponItem "acc_flashlight";
         _player addItemToUniform "ACE_Flashlight_KSF1";
@@ -70,6 +70,6 @@ _player addWeaponItem [WEAPON_LAUNCHER, WEAPON_LAUNCHER_AMMO_HEAT];
 _player addItemToBackpack WEAPON_LAUNCHER_AMMO_HEAT;
 _player addItemToBackpack WEAPON_LAUNCHER_AMMO_HE;
 
-[_player, "KAT_Private"] call BIS_fnc_setUnitInsignia;
+[_player, "KAT_Private"] call BISFUNC(setUnitInsignia);
 
 true;

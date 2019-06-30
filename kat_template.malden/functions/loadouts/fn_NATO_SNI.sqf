@@ -59,7 +59,7 @@ private _gunBagInv = [WEAPON_SNI, WEAPON_SNI_STUFF, [WEAPON_SNI_AMMO]];
 _gunbagContainer setVariable ["ace_gunbag_gunbagWeapon", _gunBagInv, true];
 
 /** NIGHT FIGHT STUFF */
-switch (["GearLevel", 0] call BIS_fnc_getParamValue) do {
+switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
     case 1: {
         _player addItemToUniform "ACE_Flashlight_KSF1";
         _player addItemToUniform "ACE_HandFlare_Yellow";
@@ -81,6 +81,6 @@ _player addWeapon WEAPON_HGUN;
 _player addHandgunItem "muzzle_snds_acp";
 _player addItemToUniform WEAPON_HGUN_AMMO;
 
-[_player, "KAT_Sergeant"] call BIS_fnc_setUnitInsignia;
+[_player, "KAT_Sergeant"] call BISFUNC(setUnitInsignia);
 
 true;

@@ -24,18 +24,18 @@ private _configPath = missionConfigFile >> "CfgFunctions" >> "LOADOUT_PLAYER";
 
 {
     {
-        [GVAR(loadouts_player), _x, compile ("call LOADOUT_PLAYER_fnc_" + _x)] call BIS_fnc_setToPairs;
+        [GVAR(loadouts_player), _x, compile ("call LOADOUT_PLAYER_fnc_" + _x)] call BISFUNC(setToPairs);
         true;
-    } count ((_configPath >> _x) call BIS_fnc_getCfgSubClasses);
+    } count ((_configPath >> _x) call BISFUNC(getCfgSubClasses));
     true;
-} count (_configPath call BIS_fnc_getCfgSubClasses);
+} count (_configPath call BISFUNC(getCfgSubClasses));
 
 _configPath = missionConfigFile >> "CfgFunctions" >> "LOADOUT_VEH";
 
 {
     {
-        [GVAR(loadouts_vehicles), _x, compile ("call LOADOUT_VEH_fnc_" + _x)] call BIS_fnc_setToPairs;
+        [GVAR(loadouts_vehicles), _x, compile ("call LOADOUT_VEH_fnc_" + _x)] call BISFUNC(setToPairs);
         true;
-    } count ((_configPath >> _x) call BIS_fnc_getCfgSubClasses);
+    } count ((_configPath >> _x) call BISFUNC(getCfgSubClasses));
     true;
-} count (_configPath call BIS_fnc_getCfgSubClasses);
+} count (_configPath call BISFUNC(getCfgSubClasses));

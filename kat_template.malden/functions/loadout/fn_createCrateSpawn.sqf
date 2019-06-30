@@ -45,7 +45,7 @@ private _crateCode = {
         _class = _splits select 1;
     };
 
-    private _spawnPos = [getMarkerPos _markerName, 0, 3, 2.8] call BIS_fnc_findSafePos;
+    private _spawnPos = [getMarkerPos _markerName, 0, 3, 2.8] call BISFUNC(findSafePos);
 
     switch (_logistic) do {
         case "WHEEL": {

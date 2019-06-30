@@ -29,7 +29,7 @@ if (_loadoutName in ["PRIVATE", "CORPORAL", "SERGEANT", "LIEUTENANT", "CAPTAIN",
 if (local _player) then {
     if (isNil QGVAR(loadouts_player)) exitWith {};
 
-    private _loadout = [GVAR(loadouts_player), _loadoutName] call BIS_fnc_getFromPairs;
+    private _loadout = [GVAR(loadouts_player), _loadoutName] call BISFUNC(getFromPairs);
 
     if (isNil "_loadout") exitWith {};
 

@@ -27,7 +27,7 @@ if ((getMarkerPos _markerName) isEqualTo [0, 0, 0]) exitWith {};
 
 private _specCode = {
     player setVariable [QGVAR(isSpectator), true, false];
-    ["Initialize", [player, [], true, true, true, true, true, true, true, true]] call BIS_fnc_EGSpectator;
+    ["Initialize", [player, [], true, true, true, true, true, true, true, true]] call BISFUNC(EGSpectator);
     [player, true] remoteExec ["hideObjectGlobal", 2, false];
     player setCaptive true;
     player setPosATL (getMarkerPos (_this select 2));

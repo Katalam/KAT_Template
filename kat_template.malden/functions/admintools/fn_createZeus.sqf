@@ -36,7 +36,7 @@ params [
         _curator addCuratorEditableObjects [(allMissionObjects "Ammo"), false];
         _curator setVariable ["birdType", ""];
         _curator setVariable ["showNotification", false];
-        [_curator, [-1, -2, 2]] call bis_fnc_setCuratorVisionModes;
+        [_curator, [-1, -2, 2]] call BISFUNC(setCuratorVisionModes);
 
         _curator addEventHandler ["CuratorPinged", {
             private _curator = _this select 0;

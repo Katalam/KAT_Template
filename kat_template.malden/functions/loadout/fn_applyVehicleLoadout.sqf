@@ -34,7 +34,7 @@ if (!local _vehicle) exitWith {false;};
 
 if (isNil QGVAR(loadouts_vehicles)) exitWith {false;};
 
-private _loadout = [GVAR(loadouts_vehicles), _loadoutName] call BIS_fnc_getFromPairs;
+private _loadout = [GVAR(loadouts_vehicles), _loadoutName] call BISFUNC(getFromPairs);
 
 if (isNil "_loadout") exitWith {false;};
 

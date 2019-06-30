@@ -19,7 +19,7 @@ _box addItemCargoGlobal ["SmokeShell", 8];
 _box addItemCargoGlobal ["SmokeShellGreen", 4];
 
 // Nachtkampfausrüstung
-switch (["GearLevel", 0] call BIS_fnc_getParamValue) do {
+switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
     case 1: {
         _box addItemCargoGlobal ["ACE_HandFlare_Yellow", 2];
         _box addItemCargoGlobal ["UGL_FlareYellow_F", 2];

@@ -7,7 +7,7 @@
 params [["_box", objNull, [objNull]]];
 
 // Nachtkampfausrüstung
-switch (["GearLevel", 0] call BIS_fnc_getParamValue) do {
+switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
     case 2: {
         _box addWeaponCargoGlobal ["ACE_Vector", 1];
         _box addItemCargoGlobal ["acc_pointer_IR", 1];

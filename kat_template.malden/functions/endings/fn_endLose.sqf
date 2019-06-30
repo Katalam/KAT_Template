@@ -17,4 +17,4 @@
 
 if !(isServer) exitWith {};
 
-["end2"] call BIS_fnc_endMissionServer;
+["end2"] call BISFUNC(endMissionServer);

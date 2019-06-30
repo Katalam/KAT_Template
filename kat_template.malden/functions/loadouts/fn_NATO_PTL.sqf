@@ -54,7 +54,7 @@ for "_i" from 1 to 7 do {
 };
 
 /** NIGHT FIGHT STUFF */
-switch (["GearLevel", 0] call BIS_fnc_getParamValue) do {
+switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
     case 1: {
         _player addWeapon "ACE_VectorDay";
         _player addPrimaryWeaponItem "acc_flashlight";
@@ -83,6 +83,6 @@ for "_i" from 1 to 2 do {
     _player addItemToVest WEAPON_HGUN_AMMO;
 };
 
-[_player, "KAT_Lieutenant"] call BIS_fnc_setUnitInsignia;
+[_player, "KAT_Lieutenant"] call BISFUNC(setUnitInsignia);
 
 true;
