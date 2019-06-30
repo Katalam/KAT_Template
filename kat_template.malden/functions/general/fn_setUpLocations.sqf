@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 /*
- * Author: Sinus
+ * Author: Katalam
  * Creates a local, visible location on the map, for every map marker named according to this pattern:
  * 'location_VISIBLE NAME ON MAP' or 'location_VISIBLENAMEONMAP' or 'location_VISIBLENAMEONMAP_12' or ...
  * This is intended for placing invisible empty markers in editor where the location should be created.
@@ -24,10 +24,15 @@ if !(hasInterface) exitWith {};
     if (_x select [0, 9] isEqualTo "location_") then {
         if (count _x > 9) then {
             private _loc = createLocation ["NameMarine", getMarkerPos _x, 5, 5];
-            private _splits = [_x, "_"] call BIS_fnc_splitString;
+            private _splits = _x splitString "_";
 
             if ((count _splits) isEqualTo 2) then {
-                _loc setText (_x select [9]);
+                private _xSelectedAfter9 = _x select [9];
+                if (isLocalized _xSelectedAfter9) then {
+                    _loc setText (localize _xSelectedAfter9);
+                } else {
+                    _loc setText _xSelectedAfter9;
+                };
             } else {
                 if (_splits select 1 isEqualTo "STR") then {
                     _loc setText (localize (_x select [9]));
