@@ -1,0 +1,51 @@
+/*
+ * Author: Katalam
+ * No #include here because bohemia.
+ * Since latest filePatching security update it isn't allowed in description.ext
+ * config.cpp is fine.
+ */
+
+author = $STR_kat_template_author; // mission author
+OnLoadName = $STR_kat_template_onLoadName; // mission title
+
+// choose-mission-screen description
+overviewPicture = "data\header.paa";
+overviewText = $STR_kat_template_loadout_overviewText;
+
+onLoadMission = $STR_kat_template_loadout_onLoadMission;
+loadScreen = "data\header.paa";
+enableDebugConsole = 1;
+respawn = 3;
+respawnDelay = 5;
+respawnOnStart = -1;
+disabledAI = 1;
+disableChannels[] = {{0, true, true}, {6, true, true}};
+saving = 0;
+corpseManagerMode = 1;
+corpseRemovalMaxTime = 900;
+corpseRemovalMinTime = 600;
+corpseLimit = 30;
+wreckManagerMode = 0;
+minPlayerDistance = 75;
+
+class Header {
+    gameType = Coop;
+    minPlayers = 2;
+    maxPlayers = 41; // headless clients count too
+};
+
+#include "CfgFunctions.hpp"
+#include "CfgDebriefing.hpp"
+#include "CfgUnitInsignia.hpp"
+#include "CfgSounds.hpp"
+#include "Params.hpp"
+
+class CfgRemoteExec {
+    class Commands {
+        mode = 2;
+    };
+    class Functions {
+        mode = 2;
+        jip = 1;
+    };
+};
