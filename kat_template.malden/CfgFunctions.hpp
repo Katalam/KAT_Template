@@ -58,6 +58,8 @@ class CfgFunctions {
         class mission {
             file = "functions\mission";
             class ambientFlyby;
+            class houseLights;
+            class houseLightsLocal;
             class test;
         };
     };
