@@ -36,7 +36,7 @@ private "_currentParent";
 private _crateCode = {
     (_this select 2) params ["_loadoutString", "_markerName", "_object"];
 
-    private _splits = [_loadoutString, "@"] call BIS_fnc_splitString;
+    private _splits = _loadoutString splitString "@";
 
     private _logistic = _splits select 0;
     private _class = "";

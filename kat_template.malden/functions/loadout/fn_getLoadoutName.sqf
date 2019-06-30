@@ -24,7 +24,7 @@ if (_string isEqualType objNull) then {
     _string = str _string;
 };
 
-private _splits = [_string, "_"] call BIS_fnc_splitString;
+private _splits = _string splitString "_";
 
 if (count _splits isEqualTo 1) exitWith {
     _string;

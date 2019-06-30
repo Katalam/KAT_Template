@@ -31,7 +31,7 @@ private "_currentParent";
 private _vehCode = {
     (_this select 2) params ["_loadoutString", "_markerName"];
 
-    private _splits = [_loadoutString, "@"] call BIS_fnc_splitString;
+    private _splits = _loadoutString splitString "@";
 
     private _loadout = _splits select 0;
     private _class = "";
