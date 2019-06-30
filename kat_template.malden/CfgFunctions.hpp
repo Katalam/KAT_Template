@@ -57,6 +57,7 @@ class CfgFunctions {
         };
         class mission {
             file = "functions\mission";
+            class ambientFlyby;
             class test;
         };
     };
