@@ -306,7 +306,7 @@ force adv_aceCPR_maxTime = 3600;
 force adv_aceCPR_useLocation_AED = 0;
 
 // ADV - ACE Splint
-force adv_aceSplint_enable = true;
+force adv_aceSplint_enable = false;
 force adv_aceSplint_reopenChance_medic = 0;
 force adv_aceSplint_reopenChance_regular = 30;
 force adv_aceSplint_reopenTime = 600;
