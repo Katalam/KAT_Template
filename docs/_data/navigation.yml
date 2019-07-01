@@ -3,3 +3,12 @@ main:
     url: /README
   - title: "Macros"
     url: /MACROS
+
+# documentation links
+docs:
+  - title: Pages
+    children:
+      - title: "Home"
+        url: /README
+      - title: "Macros"
+        url: /MACROS

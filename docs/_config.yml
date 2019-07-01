@@ -10,3 +10,4 @@ defaults:
     values:
       sidebar:
         nav: "docs"
+    share: true
