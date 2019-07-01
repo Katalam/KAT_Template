@@ -2,3 +2,11 @@ theme: jekyll-theme-minimal
 include:
   - README.md
   - MACROS.md
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"
