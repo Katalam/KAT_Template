@@ -168,7 +168,7 @@ laptop setObjectTextureGlobal [0, "data\aan\laptop_bg.paa"];
     player setVariable [QGVAR(PlayerFPS), floor diag_fps, true];
 }, 3] call CBA_fnc_addPerFrameHandler;
 
-call FUNC(initializeUI);
+[] call FUNC(initializeUI);
 
 waitUntil {!(isNull findDisplay 46)}; // wait for afterMap (they are still in the loading screen, + 30 sec at start)
 call FUNC(aan);
