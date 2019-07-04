@@ -174,4 +174,4 @@ player createDiaryRecord ["Diary", ["Situation", ""]];
     player setVariable [QGVAR(PlayerFPS), floor diag_fps, true];
 }, 3] call CBA_fnc_addPerFrameHandler;
 
-call FUNC(initializeUI);
+[] call FUNC(initializeUI);

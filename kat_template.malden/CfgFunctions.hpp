@@ -16,9 +16,9 @@ class CfgFunctions {
         };
         class ai {
             file = "functions\ai";
-            //class aiDefend;
+            class aiDefend;
             class aiFrags;
-            //class setSkill;
+            class setSkill;
         };
         class endings {
             file = "functions\endings";
