@@ -6,7 +6,7 @@
     <a href="https://github.com/Katalam/KAT_template/releases/latest">
         <img src="https://img.shields.io/badge/Version-2.0.9-blue.svg?style=flat-square" alt="KAT Template Version">
     </a>
-    <a href="https://github.com/Katalam/KAT_Templates/issues">
+    <a href="https://github.com/Katalam/KAT_template/issues">
         <img src="https://img.shields.io/github/issues-raw/Katalam/KAT_template.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
     </a>
     <a href="CONTRIBUTING.md">
@@ -26,8 +26,8 @@ Arma 3 is a sandbox game. Everyone is playing it on a different way. But I want 
 ## Getting started
 
 To understand the code you have to start with this: [ACE Coding Guidelines](https://ace3mod.com/wiki/development/coding-guidelines.html) and continue here [Schedular and our Pratices](https://ace3mod.com/wiki/development/arma-3-scheduler-and-our-practices.html)
-Every not CBA Macro is defined here: [Script Component](https://github.com/Katalam/templates/blob/master/kat_template.malden/script_component.hpp)
-All Loadouts Macros are here: [Script Component](https://github.com/Katalam/templates/blob/master/kat_template.malden/functions/loadouts/script_component.hpp)
+Every not CBA Macro is defined here: [Script Component](https://github.com/Katalam/KAT_template/blob/master/kat_template.malden/script_component.hpp)
+All Loadouts Macros are here: [Script Component](https://github.com/Katalam/KAT_template/blob/master/kat_template.malden/functions/loadouts/script_component.hpp)
 
 Every description.ext config class is defined in a extra file. The #include macros will combine it to one file but for better overview it is seperated.
 This is a template for your own mission. So you have to delete everything you don't need.
@@ -52,7 +52,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING) for details on our code of conduct, 
 
 ## Issues
 
-Please, use my [Issue Tracker](https://github.com/Katalam/templates/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
+Please, use my [Issue Tracker](https://github.com/Katalam/KAT_template/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
 
 ## Versioning
 
