@@ -1,25 +1,24 @@
-## KAT Template
-
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Katalam/templates/master/kat_template.malden/logo.png">
+    <img src="https://raw.githubusercontent.com/Katalam/KAT_template/master/logo.png">
 </p>
 
 <p align="center">
-    <a href="https://github.com/Katalam/templates/releases/latest">
+    <a href="https://github.com/Katalam/KAT_template/releases/latest">
         <img src="https://img.shields.io/badge/Version-2.0.9-blue.svg?style=flat-square" alt="KAT Template Version">
     </a>
-    <a href="https://github.com/Katalam/templates/issues">
-        <img src="https://img.shields.io/github/issues-raw/Katalam/templates.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
+    <a href="https://github.com/Katalam/KAT_Templates/issues">
+        <img src="https://img.shields.io/github/issues-raw/Katalam/KAT_template.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
     </a>
 </p>
-
 <p align="center">
     <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a>.<br/>
     Visit me on <a href="https://discord.gg/HbA93HK">Discord</a></strong></sup>
 </p>
 
 
-*Created by Katalam*
+# KAT_Template
+
+One Paragraph of project description goes here
 
 ## Getting started
 
@@ -32,14 +31,40 @@ This is a template for your own mission. So you have to delete everything you do
 Mission folders have to be as small as possible. Every sound and picture have to minimised in size and length.
 For example the .psd and .png file for the unflip vehicle action don't need to be in your own mission. Or if you wanna play a german army mission, the unit insignias for the us army aren't needed.
 
+## Deployment
+
+* Simply move the mission folder in your arma 3 mission folder
+* Example: `C:\Users\<USER>\Documents\Arma 3 - Other Profiles\<YOURPROFILE>\mpmissions`
+* Start game - Multiplayer
+* Host Server and select mission file
+
+## Built With
+
+* [CBA_A3](https://github.com/CBATeam/CBA_A3) - Community Based Addons for Arma 3 needs to be installed for MACRO usage
+
 ## Contributing
 
 You can help out with the ongoing development by looking for potential bugs in my code base, or by contributing new features. I am always welcome to new pull requests containing bug fixes, refactors and new features.
+Please read [CONTRIBUTING.md](CONTRIBUTING) for details on our code of conduct, and the process for submitting pull requests to us.
 
-### Submitting issues and requesting features
+## Issues
 
 Please, use my [Issue Tracker](https://github.com/Katalam/templates/issues) to report a bug, propose a feature, or suggest changes to the existing ones.
 
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+
+## Authors
+
+- **Katalam** - *Initial work*
+- **Sinus** - *Inital work*
+
+<!---
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+-->
+
+
 ## License
 
-KAT templates is licensed under the GNU General Public License ([GPLv3](https://github.com/Katalam/templates/blob/master/LICENSE)).
+This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details
