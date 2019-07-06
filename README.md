@@ -9,6 +9,9 @@
     <a href="https://github.com/Katalam/KAT_Templates/issues">
         <img src="https://img.shields.io/github/issues-raw/Katalam/KAT_template.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
     </a>
+    <a href="CONTRIBUTING.md">
+        <img src="https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg" alt="Contributor Covenant">
+    </a>
 </p>
 <p align="center">
     <sup><strong>Requires the latest version of <a href="https://github.com/CBATeam/CBA_A3/releases">CBA A3</a>.<br/>
