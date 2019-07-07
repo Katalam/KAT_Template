@@ -37,6 +37,7 @@ class CfgFunctions {
             class createTechnicalDiaryRecord;
             class createTeleporter;
             class noLooting;
+            class satcom;
             class setUpLocations;
             class spawnProtection;
             class teleport;
