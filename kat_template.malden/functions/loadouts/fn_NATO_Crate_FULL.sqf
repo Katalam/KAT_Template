@@ -102,11 +102,11 @@ _box addBackpackCargoGlobal ["TFAR_rt1523g_rhs", 1];
 _box addBackpackCargoGlobal ["TFAR_anarc210", 1];
 
 // Garderobe
-_box addItemCargoGlobal [HELMET_1, 1];
-_box addItemCargoGlobal [HELMET_RED, 1];
+_box addItemCargoGlobal [HELMET_RFM, 1];
+_box addItemCargoGlobal [HELMET_BERET, 1];
 _box addItemCargoGlobal [HELMET_CAP, 1];
-_box addItemCargoGlobal [UNIFORM_RED, 1];
-_box addItemCargoGlobal [VEST_RED, 1];
+_box addItemCargoGlobal [UNIFORM_RFM, 1];
+_box addItemCargoGlobal [VEST_RFM, 1];
 _box addBackpackCargoGlobal [BACKPACK_COMPACT, 1];
 _box addBackpackCargoGlobal [BACKPACK_KITBAG, 1];
 _box addBackpackCargoGlobal [BACKPACK_CARRYALL, 1];

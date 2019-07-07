@@ -15,9 +15,9 @@ _player setVariable ["ACE_isEOD", false, true];
 _player setUnitRank "CORPORAL";
 
 /** CLOTHING */
-_player forceAddUniform UNIFORM_RED;
-_player addVest VEST_RED;
-_player addHeadgear HELMET_2;
+_player forceAddUniform UNIFORM_RFM;
+_player addVest VEST_RFM;
+_player addHeadgear HELMET_RFM;
 _player addBackpackGlobal BACKPACK_KITBAG;
 
 /** COMMS */
@@ -25,6 +25,7 @@ _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
 _player linkItem "ItemAndroid";
+_player addItemToUniform "ACE_microDAGR";
 _player linkItem "TFAR_anprc152";
 _player addWeapon "Binocular";
 

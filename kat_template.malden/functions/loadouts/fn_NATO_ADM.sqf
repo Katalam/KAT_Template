@@ -15,15 +15,16 @@ _player setVariable ["ACE_isEOD", true, true];
 _player setUnitRank "COLONEL";
 
 /** CLOTHING */
-_player forceAddUniform UNIFORM_YELLOW;
+_player forceAddUniform UNIFORM_RFM;
 _player addVest VEST_CRW;
-_player addHeadgear HELMET_YELLOW;
+_player addHeadgear HELMET_BERET;
 
 /** COMMS */
 _player addBackpackGlobal "tfar_rt1523g_big_rhs";
 _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
+_player addItemToUniform "ACE_microDAGR";
 _player linkItem "TFAR_anprc152";
 _player addItemToVest "ACE_MapTools";
 

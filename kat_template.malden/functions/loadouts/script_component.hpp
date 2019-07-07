@@ -1,58 +1,30 @@
 #include "..\script_component.hpp"
 
 // Uniforms
-#define UNIFORM_YELLOW QUOTE(TTT_Uniform_Yellow_US_Desert)
-#define UNIFORM_GREEN QUOTE(TTT_Uniform_Green_US_Desert)
-#define UNIFORM_RED QUOTE(TTT_Uniform_Red_US_Desert)
-#define UNIFORM_BLACK QUOTE(TTT_Uniform_Black_US_Desert)
-#define UNIFORM_SILVER QUOTE(TTT_Uniform_Silver_US_Desert)
-#define UNIFORM_WHITE QUOTE(TTT_Uniform_White_US_Desert)
-#define UNIFORM_BRONZE QUOTE(TTT_Uniform_Bronze_US_Desert)
-#define UNIFORM_BLUE QUOTE(TTT_Uniform_Blue_US_Desert)
-#define UNIFORM_VIOLET QUOTE(TTT_Uniform_Violet_US_Desert)
-#define UNIFORM_BLACK QUOTE(TTT_Uniform_Black_US_Desert)
+#define UNIFORM_RFM selectRandom[ARR_3(QUOTE(U_B_CombatUniform_mcam),QUOTE(U_B_CombatUniform_mcam_vest),QUOTE(U_B_CombatUniform_mcam_worn))]
+#define UNIFORM_LMG QUOTE(U_B_CombatUniform_mcam_tshirt)
+#define UNIFORM_HELI QUOTE(U_B_HeliPilotCoveralls)
 
 // Vests
-#define VEST_YELLOW QUOTE(TTT_Vest_Heavy_Yellow_US_Desert)
-#define VEST_GREEN QUOTE(TTT_Vest_Heavy_Green_US_Desert)
-#define VEST_RED QUOTE(TTT_Vest_Heavy_Red_US_Desert)
-#define VEST_BLACK QUOTE(TTT_Vest_Heavy_Black_US_Desert)
-#define VEST_SILVER QUOTE(TTT_Vest_Heavy_Silver_US_Desert)
-#define VEST_WHITE QUOTE(TTT_Vest_Heavy_White_US_Desert)
-#define VEST_BRONZE QUOTE(TTT_Vest_Heavy_Bronze_US_Desert)
-#define VEST_BLUE QUOTE(TTT_Vest_Heavy_Blue_US_Desert)
-#define VEST_VIOLET QUOTE(TTT_Vest_Heavy_Violet_US_Desert)
-#define VEST_BLACK QUOTE(TTT_Vest_Heavy_Black_US_Desert)
-#define VEST_CRW QUOTE(TTT_Vest_Crew_US_Desert)
+#define VEST_RFM QUOTE(V_PlateCarrier2_rgr)
+#define VEST_CRW QUOTE(V_TacVest_oli)
+#define VEST_HELI QUOTE(V_TacVest_blk)
 
 // Backpacks
-#define BACKPACK_COMPACT QUOTE(B_AssaultPack_cbr)
-#define BACKPACK_KITBAG QUOTE(B_Kitbag_cbr)
-#define BACKPACK_CARRYALL QUOTE(B_Carryall_cbr)
+#define BACKPACK_COMPACT QUOTE(B_AssaultPack_khk)
+#define BACKPACK_KITBAG QUOTE(B_Kitbag_rgr)
+#define BACKPACK_CARRYALL QUOTE(B_Carryall_khk)
 
 // Helmets
-#define HELMET_1 QUOTE(TTT_Helmet_1_US_Desert)
-#define HELMET_2 QUOTE(TTT_Helmet_2_US_Desert)
-#define HELMET_3 QUOTE(TTT_Helmet_3_US_Desert)
-#define HELMET_4 QUOTE(TTT_Helmet_4_US_Desert)
-#define HELMET_5 QUOTE(TTT_Helmet_5_US_Desert)
-#define HELMET_6 QUOTE(TTT_Helmet_6_US_Desert)
-#define HELMET_7 QUOTE(TTT_Helmet_7_US_Desert)
-#define HELMET_8 QUOTE(TTT_Helmet_8_US_Desert)
-#define HELMET_CRW QUOTE(TTT_Helmet6_Vehiclecrew)
+#define HELMET_RFM selectRandom[ARR_6(QUOTE(H_HelmetB),QUOTE(H_HelmetB_black),QUOTE(H_HelmetB_desert),QUOTE(H_HelmetB_grass),QUOTE(H_HelmetB_sand),QUOTE(H_HelmetB_snakeskin))]
+#define HELMET_SQL selectRandom[ARR_6(QUOTE(H_HelmetSpecB),QUOTE(H_HelmetSpecB_blk),QUOTE(H_HelmetSpecB_paint2),QUOTE(H_HelmetSpecB_paint1),QUOTE(H_HelmetSpecB_sand),QUOTE(H_HelmetSpecB_snakeskin))]
+#define HELMET_CRW QUOTE(H_HelmetCrew_I)
 
-#define HELMET_YELLOW QUOTE(TTT_Beret_Yellow)
-#define HELMET_GREEN QUOTE(TTT_Beret_Green)
-#define HELMET_RED QUOTE(TTT_Beret_Red)
-#define HELMET_BLACK QUOTE(TTT_Beret_Black)
-#define HELMET_SILVER QUOTE(TTT_Beret_Silver)
-#define HELMET_WHITE QUOTE(TTT_Beret_White)
-#define HELMET_BRONZE QUOTE(TTT_Beret_Bronze)
-#define HELMET_BLUE QUOTE(TTT_Beret_Blue)
-#define HELMET_VIOLET QUOTE(TTT_Beret_Yiolet)
+#define HELMET_BERET QUOTE(H_Beret_02)
 
 #define HELMET_CAP QUOTE(H_Cap_oli)
-#define HELMET_HELI [ARR_3(QUOTE(TTT_Helmet_Eagle),QUOTE(TTT_Helmet_Falcon),QUOTE(TTT_Helmet_Hawk))]
+#define HELMET_HELI_PIL QUOTE(H_PilotHelmetHeli_B)
+#define HELMET_HELI_CRW QUOTE(H_CrewHelmetHeli_B)
 
 // Medical
 #define MEDICAL_RFM \
@@ -104,7 +76,7 @@ for "_i" from 1 to 4 do {\
 
 #define WEAPON_MKM QUOTE(srifle_EBR_F)
 #define WEAPON_MKM_AMMO QUOTE(20Rnd_762x51_Mag)
-#define WEAPON_MKM_STUFF [ARR_3(QUOTE(optic_DMS),QUOTE(muzzle_snds_B),QUOTE(bipod_01_F_blk),WEAPON_MKM_AMMO)]
+#define WEAPON_MKM_STUFF [ARR_4(QUOTE(optic_DMS),QUOTE(muzzle_snds_B),QUOTE(bipod_01_F_blk),WEAPON_MKM_AMMO)]
 
 #define WEAPON_LMG QUOTE(LMG_Mk200_F)
 #define WEAPON_LMG_AMMO QUOTE(ACE_200Rnd_65x39_cased_Box_green)

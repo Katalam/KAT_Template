@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Loadout - NATO: Sniper
+ * Loadout - NATO: Sniper [DLC]
  */
 
 params [["_player", objNull, [objNull]]];
@@ -15,15 +15,16 @@ _player setVariable ["ACE_isEOD", false, true];
 _player setUnitRank "SERGEANT";
 
 /** CLOTHING */
-_player forceAddUniform UNIFORM_BLACK;
-_player addVest VEST_BLACK;
-_player addHeadgear HELMET_3;
+_player forceAddUniform UNIFORM_RFM;
+_player addVest VEST_RFM;
+_player addHeadgear HELMET_SQL;
 
 /** COMMS */
 _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
 _player linkItem "ItemAndroid";
+_player addItemToUniform "ACE_microDAGR";
 _player linkItem "TFAR_anprc152";
 for "_i" from 1 to 2 do {
     _player addItemToVest "ACE_CableTie";
@@ -76,10 +77,10 @@ switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
 
 
 /** SIDEARM */
-_player addItemToUniform WEAPON_HGUN_AMMO;
+_player addItemToVest WEAPON_HGUN_AMMO;
 _player addWeapon WEAPON_HGUN;
 _player addHandgunItem "muzzle_snds_acp";
-_player addItemToUniform WEAPON_HGUN_AMMO;
+_player addItemToVest WEAPON_HGUN_AMMO;
 
 [_player, "KAT_Sergeant"] call BISFUNC(setUnitInsignia);
 

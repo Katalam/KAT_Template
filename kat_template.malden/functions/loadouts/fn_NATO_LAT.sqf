@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Loadout - NATO: Rifleman (AT)
+ * Loadout - NATO: Rifleman (AT) [DLC]
  */
 
 params [["_player", objNull, [objNull]]];
@@ -15,9 +15,9 @@ _player setVariable ["ACE_isEOD", false, true];
 _player setUnitRank "PRIVATE";
 
 /** CLOTHING */
-_player forceAddUniform UNIFORM_RED;
-_player addVest VEST_RED;
-_player addHeadgear HELMET_1;
+_player forceAddUniform UNIFORM_RFM;
+_player addVest VEST_RFM;
+_player addHeadgear HELMET_RFM;
 _player addBackpackGlobal BACKPACK_COMPACT;
 
 /** COMMS */
@@ -25,6 +25,7 @@ _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
 _player linkItem "ItemMicroDAGR";
+_player addItemToUniform "ACE_microDAGR";
 _player linkItem "TFAR_rf7800str";
 
 /** MEDICAL */
@@ -60,9 +61,9 @@ switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
 };
 
 /** SIDEARM */
-_player addItemToUniform WEAPON_HGUN_AMMO;
+_player addItemToVest WEAPON_HGUN_AMMO;
 _player addWeapon WEAPON_HGUN;
-_player addItemToUniform WEAPON_HGUN_AMMO;
+_player addItemToVest WEAPON_HGUN_AMMO;
 
 /** LAUNCHER */
 _player addWeapon WEAPON_LAUNCHER;

@@ -30,11 +30,11 @@ GVAR(gui_player_loadouts) = [
     ["Autorifleman",                        "NATO_LMG"],
     ["Grenadier",                           "NATO_UGL"],
     ["Combat Life Saver",                   "NATO_CLS"],
-    ["Rifleman (AT)",                       "NATO_LAT"],
+    ["Rifleman (AT) [DLC]",                 "NATO_LAT"],
     ["Rifleman",                            "NATO_RFM"],
     "Waffenteam-Loadouts",
     ["Weapon Team Leader (MG)",             "NATO_WTL_MMG"],
-    ["Machinegunner",                       "NATO_MMG"],
+    ["Machinegunner [DLC]",                 "NATO_MMG"],
     ["Assistant Machinegunner",             "NATO_AMG"],
     ["Weapon Team Leader (Launcher)",       "NATO_WTL_HAT"],
     ["Missile Specialist",                  "NATO_HAT"],
@@ -63,7 +63,7 @@ GVAR(gui_player_loadouts) = [
     ["Mortar Loader",                       "NATO_MOR_ASS"],
     ["Marksman",                            "NATO_MKM"],
     ["Rifleman (Explosives)",               "NATO_ESP"],
-    ["Sniper",                              "NATO_SNI"],
+    ["Sniper [DLC]",                        "NATO_SNI"],
     ["Spotter",                             "NATO_SPO"]
 ];
 GVAR(gui_crate_loadouts) = [

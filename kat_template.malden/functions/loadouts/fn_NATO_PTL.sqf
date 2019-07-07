@@ -15,17 +15,18 @@ _player setVariable ["ACE_isEOD", true, true];
 _player setUnitRank "LIEUTENANT";
 
 /** CLOTHING */
-_player forceAddUniform UNIFORM_YELLOW;
-_player addVest VEST_YELLOW;
-_player addHeadgear HELMET_YELLOW;
+_player forceAddUniform UNIFORM_RFM;
+_player addVest VEST_RFM;
+_player addHeadgear HELMET_BERET;
 
 /** COMMS */
 _player addBackpackGlobal "tfar_rt1523g_big_rhs";
-_player addItemToBackpack HELMET_5;
+_player addItemToBackpack HELMET_SQL;
 _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
 _player linkItem "ItemAndroid";
+_player addItemToUniform "ACE_microDAGR";
 _player linkItem "TFAR_anprc152";
 
 for "_i" from 1 to 2 do {

@@ -15,7 +15,7 @@ _player setVariable ["ACE_isEOD", false, true];
 _player setUnitRank "SERGEANT";
 
 /** CLOTHING */
-_player forceAddUniform UNIFORM_BRONZE;
+_player forceAddUniform UNIFORM_RFM;
 _player addVest VEST_CRW;
 _player addHeadgear HELMET_CRW;
 
@@ -24,6 +24,7 @@ _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
 _player linkItem "ItemAndroid";
+_player addItemToUniform "ACE_microDAGR";
 _player linkItem "TFAR_anprc152";
 _player addItemToVest "ACE_MapTools";
 _player addItemToVest "ACE_key_west";
@@ -65,9 +66,9 @@ switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
 };
 
 /** SIDEARM */
-_player addItemToUniform WEAPON_HGUN_AMMO;
+_player addItemToVest WEAPON_HGUN_AMMO;
 _player addWeapon WEAPON_HGUN;
-_player addItemToUniform WEAPON_HGUN_AMMO;
+_player addItemToVest WEAPON_HGUN_AMMO;
 
 [_player, "KAT_Sergeant"] call BISFUNC(setUnitInsignia);
 

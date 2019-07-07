@@ -15,9 +15,9 @@ _player setVariable ["ACE_isEOD", false, true];
 _player setUnitRank "PRIVATE";
 
 /** CLOTHING */
-_player forceAddUniform UNIFORM_VIOLET;
-_player addVest VEST_VIOLET;
-_player addHeadgear HELMET_1;
+_player forceAddUniform UNIFORM_RFM;
+_player addVest VEST_RFM;
+_player addHeadgear HELMET_RFM;
 _player addItemToVest HELMET_CAP;
 _player addBackpack "B_Mortar_01_weapon_F";
 
@@ -26,6 +26,7 @@ _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
 _player linkItem "ItemAndroid";
+_player addItemToUniform "ACE_microDAGR";
 _player linkItem "TFAR_anprc152";
 
 _player addItemToVest "ACE_EntrenchingTool";
@@ -62,9 +63,9 @@ switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
 };
 
 /** SIDEARM */
-_player addItemToUniform WEAPON_HGUN_AMMO;
+_player addItemToVest WEAPON_HGUN_AMMO;
 _player addWeapon WEAPON_HGUN;
-_player addItemToUniform WEAPON_HGUN_AMMO;
+_player addItemToVest WEAPON_HGUN_AMMO;
 
 [_player, "KAT_Private"] call BISFUNC(setUnitInsignia);
 
