@@ -9,7 +9,7 @@
     <a href="https://github.com/Katalam/KAT_template/issues">
         <img src="https://img.shields.io/github/issues-raw/Katalam/KAT_template.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
     </a>
-    <a href="CONTRIBUTING.md">
+    <a href="CONTRIBUTING">
         <img src="https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg" alt="Contributor Covenant">
     </a>
 </p>
@@ -48,7 +48,7 @@ For example the .psd and .png file for the unflip vehicle action don't need to b
 ## Contributing
 
 You can help out with the ongoing development by looking for potential bugs in my code base, or by contributing new features. I am always welcome to new pull requests containing bug fixes, refactors and new features.
-Please read [CONTRIBUTING.md](CONTRIBUTING) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING](CONTRIBUTING) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Issues
 
@@ -56,7 +56,7 @@ Please, use my [Issue Tracker](https://github.com/Katalam/KAT_template/issues) t
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Katalam/KAT_template/tags).
 
 ## Authors
 
