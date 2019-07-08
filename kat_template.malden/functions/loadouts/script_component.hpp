@@ -92,6 +92,8 @@ for "_i" from 1 to 4 do {\
 
 #define WEAPON_HGUN QUOTE(hgun_Pistol_heavy_01_F)
 #define WEAPON_HGUN_AMMO QUOTE(11Rnd_45ACP_Mag)
+#define WEAPON_HGUN_SCOPE QUOTE(optic_MRD)
+#define WEAPON_HGUN_SILENCER QUOTE(muzzle_snds_acp)
 
 #define WEAPON_SNI QUOTE(srifle_DMR_02_sniper_F)
 #define WEAPON_SNI_AMMO [ARR_2(QUOTE(10Rnd_338_Mag),10)]

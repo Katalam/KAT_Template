@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Loadout - NATO: Marksman
+ * Loadout - NATO: Marksman [DLC]
  */
 
 params [["_player", objNull, [objNull]]];

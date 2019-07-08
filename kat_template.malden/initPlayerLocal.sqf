@@ -61,7 +61,7 @@ GVAR(gui_player_loadouts) = [
     ["Ammo Bearer",                         "NATO_AMB"],
     ["Mortar Gunner",                       "NATO_MOR_GUN"],
     ["Mortar Loader",                       "NATO_MOR_ASS"],
-    ["Marksman",                            "NATO_MKM"],
+    ["Marksman [DLC]",                      "NATO_MKM"],
     ["Rifleman (Explosives)",               "NATO_ESP"],
     ["Sniper [DLC]",                        "NATO_SNI"],
     ["Spotter",                             "NATO_SPO"]
@@ -132,7 +132,7 @@ if (_loadoutName in ["NATO_ADM", "NATO_PTL"]) then {
 [crate_logistic, "marker_cratespawn"] call FUNC(createCrateSpawn);
 [flagTP] call FUNC(createTeleporter);
 [tv, "marker_teleport_spectator"] call FUNC(createSpectator);
-[batterie, "marker_vehiclespawn"] call FUNC(createVehicleSpawn);
+[battery, "marker_vehiclespawn"] call FUNC(createVehicleSpawn);
 call FUNC(createInteractionsVarious);
 
 // create briefing from the bottom up

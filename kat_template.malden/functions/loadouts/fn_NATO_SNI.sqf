@@ -79,7 +79,7 @@ switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
 /** SIDEARM */
 _player addItemToVest WEAPON_HGUN_AMMO;
 _player addWeapon WEAPON_HGUN;
-_player addHandgunItem "muzzle_snds_acp";
+_player addHandgunItem WEAPON_HGUN_SILENCER;
 _player addItemToVest WEAPON_HGUN_AMMO;
 
 [_player, "KAT_Sergeant"] call BISFUNC(setUnitInsignia);

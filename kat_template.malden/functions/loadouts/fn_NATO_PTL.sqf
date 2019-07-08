@@ -78,7 +78,7 @@ switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
 /** SIDEARM */
 _player addItemToUniform WEAPON_HGUN_AMMO;
 _player addWeapon WEAPON_HGUN;
-_player addHandgunItem "optic_MRD";
+_player addHandgunItem WEAPON_HGUN_SCOPE;
 _player addItemToUniform WEAPON_HGUN_AMMO;
 for "_i" from 1 to 2 do {
     _player addItemToVest WEAPON_HGUN_AMMO;

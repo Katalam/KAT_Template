@@ -3197,7 +3197,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="batterie";
+				name="battery";
 			};
 			id=287;
 			type="Land_CarBattery_01_F";
