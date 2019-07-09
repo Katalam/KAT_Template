@@ -7,7 +7,7 @@
         <img src="https://img.shields.io/badge/Version-2.0.10-blue.svg?style=flat-square" alt="KAT Template Version">
     </a>
     <a href="https://github.com/Katalam/KAT_template/issues">
-        <img src="https://img.shields.io/github/issues-raw/Katalam/KAT_template.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
+        <img src="https://img.shields.io/github/issues-raw/Katalam/KAT_Template.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
     </a>
     <a href="CONTRIBUTING">
         <img src="https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg" alt="Contributor Covenant">
