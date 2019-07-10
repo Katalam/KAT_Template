@@ -12,16 +12,13 @@ else:
     location = os.path.join(location, 'Arma 3')
 
 for root, dirs, files in os.walk(location):
-    path = root.split(os.sep)
+    path = os.path.splitdrive(root)
     for name in dirs:
-        print(path)
         if 'kat_template.malden'.lower() in name:
             full_path = os.path.join(os.path.join(*path), name)
 
 root_src_dir = full_path
 root_dst_dir = root_src_dir[:-19]
-print(root_src_dir)
-print(root_dst_dir)
 
 src_txt = input("Source directory: ")
 
