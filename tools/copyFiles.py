@@ -4,12 +4,15 @@ if sys.version_info[0] == 2:
     print("Python 3 is required.")
     sys.exit(1)
 
-location = os.path.join(os.path.expanduser('~'), 'Documents')
-location_test = os.path.join(location, 'Arma 3 - Other Profiles')
-if os.path.isdir(location_test):
-    location = location_test
-else:
-    location = os.path.join(location, 'Arma 3')
+scriptpath = os.path.realpath(__file__)
+location = os.path.dirname(os.path.dirname(scriptpath))
+
+# location = os.path.join(os.path.expanduser('~'), 'Documents')
+# location_test = os.path.join(location, 'Arma 3 - Other Profiles')
+# if os.path.isdir(location_test):
+#    location = location_test
+# else:
+#    location = os.path.join(location, 'Arma 3')
 
 for root, dirs, files in os.walk(location):
     path = os.path.splitdrive(root)
