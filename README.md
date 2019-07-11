@@ -41,9 +41,16 @@ For example the .psd and .png file for the unflip vehicle action don't need to b
 * Start game - Multiplayer
 * Host Server and select mission file
 
+## Using tools
+
+* You have to have python 3 installed, if not [here](https://www.python.org/downloads/) and guide can be found [here](https://wiki.python.org/moin/BeginnersGuide/Download)
+* CopyFiles will copy the files inside the template in a new mission folder without mission.sqm and some other unnecessary files
+* Make will pack a mission into a pbo with armake 2
+
 ## Built With
 
 * [CBA_A3](https://github.com/CBATeam/CBA_A3) - Community Based Addons for Arma 3 needs to be installed for MACRO usage
+* [ARMAKE2](https://github.com/KoffeinFlummi/armake2) - Builds mission and mod pbos
 
 ## Contributing
 
