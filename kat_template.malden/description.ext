@@ -18,6 +18,7 @@ enableDebugConsole = 1;
 respawn = 3;
 respawnDelay = 5;
 respawnOnStart = -1;
+//allowFunctionsRecompile = 1;
 disabledAI = 1;
 disableChannels[] = {{0, true, true}, {6, true, true}};
 saving = 0;
