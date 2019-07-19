@@ -35,9 +35,9 @@ private _specCode = {
 };
 
 [_object, 0, [],
-    [QGVAR(specActionParent), localize LSTRING(spectator), "", {}, {true}, {}, [], [0, 0.37, 0.4]] call ace_interact_menu_fnc_createAction
+    [QGVAR(specActionParent), localize LSTRING(spectator), "", {}, {true}, {}, [], [0, 0.37, 0.4]] call ACEFUNC(interact_menu,createAction)
 ] call ace_interact_menu_fnc_addActionToObject;
 
 [_object, 0, [QGVAR(specActionParent)],
-    [QGVAR(specAction0), localize LSTRING(beSpectator), "", _specCode, {true}, {}, _markerName] call ace_interact_menu_fnc_createAction
+    [QGVAR(specAction0), localize LSTRING(beSpectator), "", _specCode, {true}, {}, _markerName] call ACEFUNC(interact_menu,createAction)
 ] call ace_interact_menu_fnc_addActionToObject;
