@@ -47,7 +47,6 @@ for "_i" from 1 to 6 do {\
 for "_i" from 1 to 8 do {\
     _player addItemToVest "ACE_epinephrine";\
 };\
-_player addItemToVest "adv_aceCPR_AED";\
 for "_i" from 1 to 2 do {\
     _player addItemToBackpack "ACE_morphine";\
 };\
