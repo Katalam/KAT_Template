@@ -63,6 +63,12 @@ class CfgFunctions {
             class radio;
         };
     };
+    class KAT_short {
+        tag = "KAT";
+        class functions {
+            class apl {file = "functions\loadout\fn_apl.sqf"};
+        };
+    };
     class LOADOUT_PLAYER {
         tag = "LOADOUT_PLAYER";
         class loadouts {
