@@ -33,7 +33,7 @@ GVAR(gui_player_loadouts) = [
     ["Combat Life Saver",                   "NATO_CLS"],
     ["Rifleman (AT)",                       "NATO_LAT"],
     ["Rifleman",                            "NATO_RFM"],
-    "Logistiker-Loadouts",
+    "Logistic-Loadouts",
     ["Logistic Leader",                     "NATO_LOG_LEAD"],
     ["Logistic Assistant",                  "NATO_LOG"],
     ["Logistic Medic",                      "NATO_LOG_MED"],
