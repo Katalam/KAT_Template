@@ -64,6 +64,7 @@ force force ace_goggles_effects = 2
 // ACE Hearing
 force ace_hearing_autoAddEarplugsToUnits = false
 force ace_hearing_earplugsVolume = 0.5
+force ace_hearing_disableEarRinging = true
 force ace_hearing_enableCombatDeafness = false
 force force ace_hearing_enabledForZeusUnits = false
 force ace_hearing_unconsciousnessVolume = 0.4
@@ -74,6 +75,7 @@ force force ace_interaction_enableTeamManagement = true
 
 // ACE Logistics
 force force ace_cargo_enable = true
+force ace_cargo_loadTimeCoefficent = 5
 force ace_cargo_paradropTimeCoefficent = 2.5
 force ace_rearm_level = 2
 force ace_rearm_supply = 0
@@ -115,48 +117,48 @@ force ace_map_gestures_maxRange = 7
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 2
-force ace_medical_AIDamageThreshold = 1
-force ace_medical_allowLitterCreation = true
+force force ace_medical_AIDamageThreshold = 1
+force force ace_medical_allowLitterCreation = true
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true
-force ace_medical_amountOfReviveLives = -1
-force ace_medical_bleedingCoefficient = 1
-force ace_medical_blood_enabledFor = 2
-force ace_medical_consumeItem_PAK = 0
-force ace_medical_consumeItem_SurgicalKit = 0
+force force ace_medical_amountOfReviveLives = -1
+force force ace_medical_bleedingCoefficient = 0.8
+force force ace_medical_blood_enabledFor = 2
+force force ace_medical_consumeItem_PAK = 0
+force force ace_medical_consumeItem_SurgicalKit = 0
 force force ace_medical_delayUnconCaptive = 3
-force ace_medical_enableAdvancedWounds = true
+force force ace_medical_enableAdvancedWounds = true
 force force ace_medical_enableFor = 0
 force force ace_medical_enableOverdosing = true
-force ace_medical_enableRevive = 1
-force ace_medical_enableScreams = true
-force ace_medical_enableUnconsciousnessAI = 0
-force ace_medical_enableVehicleCrashes = true
+force force ace_medical_enableRevive = 1
+force force ace_medical_enableScreams = true
+force force ace_medical_enableUnconsciousnessAI = 0
+force force ace_medical_enableVehicleCrashes = true
 force force ace_medical_healHitPointAfterAdvBandage = true
 force force ace_medical_increaseTrainingInLocations = false
 force force ace_medical_keepLocalSettingsSynced = true
-force ace_medical_level = 2
-force ace_medical_litterCleanUpDelay = 180
-force ace_medical_litterSimulationDetail = 3
-force ace_medical_maxReviveTime = 1800
-force ace_medical_medicSetting = 2
-force ace_medical_medicSetting_basicEpi = 1
-force ace_medical_medicSetting_PAK = 1
-force ace_medical_medicSetting_SurgicalKit = 1
+force force ace_medical_level = 2
+force force ace_medical_litterCleanUpDelay = 180
+force force ace_medical_litterSimulationDetail = 3
+force force ace_medical_maxReviveTime = 1800
+force force ace_medical_medicSetting = 2
+force force ace_medical_medicSetting_basicEpi = 1
+force force ace_medical_medicSetting_PAK = 2
+force force ace_medical_medicSetting_SurgicalKit = 1
 force force ace_medical_menu_allow = 1
 force force ace_medical_menu_maxRange = 3
 force force ace_medical_menu_openAfterTreatment = true
 force force ace_medical_menu_useMenu = 1
 force force ace_medical_moveUnitsFromGroupOnUnconscious = false
-force ace_medical_painCoefficient = 1
+force force ace_medical_painCoefficient = 1
 force force ace_medical_painIsOnlySuppressed = true
-force ace_medical_playerDamageThreshold = 1
-force ace_medical_preventInstaDeath = true
-force ace_medical_remoteControlledAI = true
-force ace_medical_useCondition_PAK = 0
-force ace_medical_useCondition_SurgicalKit = 0
-force ace_medical_useLocation_basicEpi = 0
-force ace_medical_useLocation_PAK = 3
-force ace_medical_useLocation_SurgicalKit = 0
+force force ace_medical_playerDamageThreshold = 1
+force force ace_medical_preventInstaDeath = true
+force force ace_medical_remoteControlledAI = true
+force force ace_medical_useCondition_PAK = 0
+force force ace_medical_useCondition_SurgicalKit = 0
+force force ace_medical_useLocation_basicEpi = 0
+force force ace_medical_useLocation_PAK = 3
+force force ace_medical_useLocation_SurgicalKit = 0
 
 // ACE Mk6 Mortar
 force ace_mk6mortar_airResistanceEnabled = true
@@ -182,6 +184,7 @@ force force ace_overheating_displayTextOnJam = true
 force force ace_overheating_enabled = true
 force force ace_overheating_overheatingDispersion = true
 force force ace_overheating_showParticleEffects = true
+force force ace_overheating_showParticleEffectsForEveryone = false
 force force ace_overheating_unJamFailChance = 0.1
 force force ace_overheating_unJamOnreload = false
 
@@ -248,11 +251,11 @@ force force ace_ui_groupBar = false
 // ACE Vehicle Lock
 force ace_vehiclelock_defaultLockpickStrength = 10
 force ace_vehiclelock_lockVehicleInventory = true
-force ace_vehiclelock_vehicleStartingLockState = -1
+force ace_vehiclelock_vehicleStartingLockState = 0
 
 // ACE View Distance Limiter
 force force ace_viewdistance_enabled = true
-force ace_viewdistance_limitViewDistance = 10000
+force ace_viewdistance_limitViewDistance = 12000
 
 // ACE Weapons
 force force ace_laserpointer_enabled = true
@@ -295,22 +298,22 @@ force force acex_viewrestriction_modeSelectiveLand = 1
 force force acex_viewrestriction_modeSelectiveSea = 1
 
 // ADV - ACE CPR
-force adv_aceCPR_addTime = 20;
-force adv_aceCPR_AED_stationType = """Land_Defibrillator_F""";
-force adv_aceCPR_chance_0 = 5;
-force adv_aceCPR_chance_1 = 15;
-force adv_aceCPR_chance_2 = 40;
-force adv_aceCPR_chance_aed = 85;
-force adv_aceCPR_enable = true;
-force adv_aceCPR_maxTime = 3600;
-force adv_aceCPR_useLocation_AED = 0;
+force force adv_aceCPR_addTime = 20;
+force force adv_aceCPR_AED_stationType = """Land_Defibrillator_F""";
+force force adv_aceCPR_chance_0 = 3;
+force force adv_aceCPR_chance_1 = 20;
+force force adv_aceCPR_chance_2 = 30;
+force force adv_aceCPR_chance_aed = 85;
+force force adv_aceCPR_enable = true;
+force force adv_aceCPR_maxTime = 3600;
+force force adv_aceCPR_useLocation_AED = 0;
 
 // ADV - ACE Splint
-force adv_aceSplint_enable = false;
-force adv_aceSplint_reopenChance_medic = 0;
-force adv_aceSplint_reopenChance_regular = 30;
-force adv_aceSplint_reopenTime = 600;
-force adv_aceSplint_reuseChance = 80;
+force force adv_aceSplint_enable = false;
+force force adv_aceSplint_reopenChance_medic = 0;
+force force adv_aceSplint_reopenChance_regular = 30;
+force force adv_aceSplint_reopenTime = 600;
+force force adv_aceSplint_reuseChance = 80;
 
 // GRAD Trenches
 force force grad_trenches_functions_allowBigEnvelope = true
