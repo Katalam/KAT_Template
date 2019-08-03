@@ -24,8 +24,9 @@ _player addBackpackGlobal "TFAR_rt1523g_rhs";
 _player linkItem "ItemMap";
 _player linkItem "ItemCompass";
 _player linkItem "ItemWatch";
-_player linkItem "ItemAndroid";
+_player linkItem "ItemcTab";
 _player linkItem "TFAR_anprc152";
+_player addItemToUniform "ACE_microDAGR";
 
 for "_i" from 1 to 2 do {
     _player addItemToVest "ACE_CableTie";
