@@ -47,7 +47,7 @@ addMissionEventHandler ["EntityKilled", {
     private _container = (uniformContainer _unit); // uniform _unit isn't available anymore so we have to take the container for adding stuff
     _container addItemCargoGlobal ["ACE_packingBandage", 5];
     _container addItemCargoGlobal ["ACE_elasticBandage", 3];
-    _container addItemCargoGlobal ["adv_aceSplint_splint", 2];
+    //_container addItemCargoGlobal ["adv_aceSplint_splint", 2];
     _container addItemCargoGlobal ["ACE_morphine", 1];
 
     private _weaponHolders = nearestObjects [_unit, ["WeaponHolderSimulated"], 5];
