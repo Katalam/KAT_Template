@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=299;
+		nextID=313;
 	};
 	class Camera
 	{
-		pos[]={2187.2808,43.08931,267.90936};
-		dir[]={-0.56383651,-0.58812857,-0.58002138};
-		up[]={-0.40998986,0.80870289,-0.42176089};
-		aside[]={-0.71710974,-4.7893263e-007,0.69710165};
+		pos[]={2216.6335,83.618027,268.41034};
+		dir[]={-0.16091271,-0.65723795,-0.73646301};
+		up[]={-0.14030111,0.75362295,-0.64213735};
+		aside[]={-0.97704941,-3.3600372e-007,0.21347949};
 	};
 };
 binarizationWanted=0;
@@ -9565,7 +9565,7 @@ class Mission
 							class Attributes
 							{
 								lock="UNLOCKED";
-								name="NATO_Veh_HELI_2";
+								name="NATO_Veh_MED_3";
 							};
 							id=100;
 							type="RHS_UH1Y_d";
