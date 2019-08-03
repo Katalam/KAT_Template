@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=285;
+		nextID=299;
 	};
 	class Camera
 	{
-		pos[]={2291.5735,81.231773,348.98315};
-		dir[]={-0.52350247,-0.53533477,-0.66300982};
-		up[]={-0.33178899,0.84458351,-0.42020911};
-		aside[]={-0.78491539,-7.2002877e-007,0.6197595};
+		pos[]={2187.2808,43.08931,267.90936};
+		dir[]={-0.56383651,-0.58812857,-0.58002138};
+		up[]={-0.40998986,0.80870289,-0.42176089};
+		aside[]={-0.71710974,-4.7893263e-007,0.69710165};
 	};
 };
 binarizationWanted=0;
@@ -11692,7 +11692,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={2088.1885,22.976761,226.91765};
+								position[]={2088.188,22.976761,226.91797};
 								angles[]={0,1.5959116,0};
 							};
 							side="Empty";
@@ -11700,7 +11700,7 @@ class Mission
 							class Attributes
 							{
 								lock="UNLOCKED";
-								name="NATO_Veh_CAR_10";
+								name="NATO_Veh_MED_2";
 							};
 							id=92;
 							type="rhsusf_CGRCAT1A2_Mk19_usmc_d";
@@ -11819,7 +11819,7 @@ class Mission
 							class Attributes
 							{
 								lock="UNLOCKED";
-								name="NATO_Veh_CAR_9";
+								name="NATO_Veh_MED_1";
 							};
 							id=112;
 							type="rhsusf_CGRCAT1A2_M2_usmc_d";
