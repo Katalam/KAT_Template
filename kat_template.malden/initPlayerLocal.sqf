@@ -6,9 +6,11 @@
 
 // disable arma voice chat
 player setVariable ["BIS_noCoreConversations", true];
+
+// add a spawn protection to prevent fail grenades (hardcoded 75 m from "respawn_west" marker)
 call FUNC(spawnProtection);
 
-// locations
+// add locations (can be found at most seaports) for all marker named "location_"
 call FUNC(setUpLocations);
 
 // add player side event handlers for the statistics at mission end
@@ -17,6 +19,11 @@ call FUNC(setUpStatistic);
 // read and prepare available loadouts
 call FUNC(prepareLoadouts);
 
+// All loadouts in here are available at the loadout-board
+// To add a new category the element has to be a <STRING>
+// To add a new loadout to a existing category the element has to be a <ARRAY>
+// The first element of the <ARRAY> has to be the display name and the second the classname of the loadout
+// Both elements are <STRINGS>
 GVAR(gui_player_loadouts) = [
     "Stabs-Loadouts",
     ["Platoon Leader",                      "NATO_PTL"],
@@ -66,6 +73,12 @@ GVAR(gui_player_loadouts) = [
     ["Sniper [DLC]",                        "NATO_SNI"],
     ["Spotter",                             "NATO_SPO"]
 ];
+// Same <ARRAY> for the crates
+// First element is a <STRING> with the displayname
+// Second element is a <STRING> with the crate loadout classname and after that a @ and the classname of the crate following
+// In order to get wheels and tracks the second element have to be "WHEEL" or "TRACK"
+// To get static weapon the second element have to be "STATIC@MyStaticWeaponClassname"
+// To remove all crates in the near of hardcoded 4.5 meter the second element have to be "REMOVE"
 GVAR(gui_crate_loadouts) = [
     "Infanterieversorgung",
     ["Infanterie-Kiste",                    "NATO_Crate_INF@Box_NATO_Ammo_F"],
@@ -90,6 +103,11 @@ GVAR(gui_crate_loadouts) = [
     ["Leere Kiste",                         "EMPTY@Box_NATO_Ammo_F"],
     ["Kisten in der Nähe löschen",          "REMOVE"]
 ];
+// Same <ARRAY> for the vehicles
+// First element is a <STRING> with the displayname
+// Second element is a <STRING> with the vehicle loadout classname and after that a @ and the classname of the vehicle following
+// To get empty vehicle cargos the loadout classname is "empty@MyVehicleClassname"
+// To remove all crates in the near of hardcoded 15 meter the second element have to be "REMOVE"
 GVAR(gui_vehicle_loadouts) = [
     "Helikopter",
     ["AH-99 'Blackfoot'",                        "empty@B_Heli_Attack_01_dynamicLoadout_F"],
@@ -119,20 +137,38 @@ GVAR(gui_vehicle_loadouts) = [
 // disable arma voice chat
 player setVariable ["BIS_noCoreConversations", true];
 
+// the variable name of the player has inb most cases a _1 this will removed here
+// DO NOT REMOVE THIS LINE
 private _loadoutName = [str player] call FUNC(getLoadoutName);
 
 // add scripts to briefing for some players
+// Admin and Platoon Leader get extra curator modules and a page with diary scripts
 if (_loadoutName in ["NATO_ADM", "NATO_PTL"]) then {
     call FUNC(setUpDiaryScripts);
     call FUNC(addAresHelpers);
 };
 
-// add various ace interactions
+// creates the loadout gui at the object called board
 [board] call FUNC(createLoadoutGUI);
+
+// creates the logistic crate spawner at the object called crate_logistic
+// will spawn crates at the position of the "marker_cratespawn" called marker
 [crate_logistic, "marker_cratespawn"] call FUNC(createCrateSpawn);
+
+// add the teleporter to the object called flagTP
 [flagTP] call FUNC(createTeleporter);
+
+// add the spectator action to a object called tv
+// will teleport people to the position of the "marker_teleport_spectator" called marker
+// move the marker away from any possible alive player contact
+// spectator can still talk with other spectator and will be heard by anybody near
 [tv, "marker_teleport_spectator"] call FUNC(createSpectator);
+
+// add the vehicle spawner gui
+// spawns vehicle at the position of the "marker_vehiclespawn" called marker
 [battery, "marker_vehiclespawn"] call FUNC(createVehicleSpawn);
+
+// adds some different and small ace interaction
 call FUNC(createInteractionsVarious);
 
 // create briefing from the bottom up
@@ -159,19 +195,28 @@ player createDiaryRecord ["Diary", ["Funkfrequenzen", "Interne Funkfrequenzen:
     - Fahrzeuge: 200-299 MHz<br/>
     - Lufteinheiten: 300-399 MHz<br/>
     - weitere: 400-499 MHz"]];
+
+// will evaluate the cba setting and show the active settings as a readable text
 call FUNC(createTechnicalDiaryRecord);
+
+// place your story here, people can re read it ingame
 /*
 player createDiaryRecord ["Diary", ["General Instructions", ""]];
 player createDiaryRecord ["Diary", ["Mission", ""]];
 player createDiaryRecord ["Diary", ["Situation", ""]];
 */
 
+// applys the player loadout
 [player, _loadoutName] call FUNC(applyPlayerLoadout);
+
+// locks the player primary weapon at mission start
 [player, currentWeapon player, currentMuzzle player] call ACEFUNC(safemode,lockSafety);
 
 // let each client update their FPS into a public variable based on a fixed update interval
+// zeusfpsmonitor have to have access to it so it is needed
 [{
     player setVariable [QGVAR(PlayerFPS), floor diag_fps, true];
 }, 3] call CBA_fnc_addPerFrameHandler;
 
+// initialize the ui for the zeusfpsmonitor
 [] call FUNC(initializeUI);

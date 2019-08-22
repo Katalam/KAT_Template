@@ -4,9 +4,14 @@
  * Applies the loadout after respawn.
  */
 
+// unlinks the non tfar radio for technical reasons
+// prevents radio duplications
 player unlinkItem "ItemRadio";
 
+// get the loadoutname from the variable name
 private _loadoutName = [str player] call FUNC(getLoadoutName);
+
+// applys the player laodout
 [player, _loadoutName] call FUNC(applyPlayerLoadout);
 
 // Close BI's spectator that may be open
