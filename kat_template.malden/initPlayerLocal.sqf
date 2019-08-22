@@ -146,6 +146,10 @@ private _loadoutName = [str player] call FUNC(getLoadoutName);
 if (_loadoutName in ["NATO_ADM", "NATO_PTL"]) then {
     call FUNC(setUpDiaryScripts);
     call FUNC(addAresHelpers);
+
+    if (TFAR_pluginTimeout < 15) then {
+        ["TFAR_pluginTimeout", 15] call CBA_settings_fnc_set;
+    };
 };
 
 // creates the loadout gui at the object called board
