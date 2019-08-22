@@ -3,10 +3,10 @@
 
 // Version
 #define MAJOR 2
-#define MINOR 0
-#define PATCHLVL 10
-#define DAY 7
-#define MONTH 7
+#define MINOR 1
+#define PATCHLVL 11
+#define DAY 22
+#define MONTH 8
 #define YEAR 2019
 
 #define DEBUG_SYNCHRONOUS
