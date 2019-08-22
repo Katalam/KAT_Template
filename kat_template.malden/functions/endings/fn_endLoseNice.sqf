@@ -11,9 +11,8 @@
  * None
  *
  * Example:
- * call KAT_template_fnc_endWinNice;
+ * call KAT_template_fnc_endLoseNice;
  *
- * Public: Yes
  */
 
 if !(isServer) then {
@@ -46,9 +45,9 @@ if !(isServer) then {
 };
 
 [] spawn {
-    playMusic "LeadTrack01_F_Tank";
+    playMusic "BackgroundTrack03_F_EPC";
     sleep 3;
-    ["<t color='#00ff00'>Mission erfolgreich</t>", 1, 0.8] spawn BISFUNC(dynamicText);
+    ["<t color='#ff0000'>Mission fehlgeschlagen</t>", 1, 0.8] spawn BISFUNC(dynamicText);
     sleep 5;
     [
         [(format ["%1 Spieler", playersNumber playerSide]), 1, 2],
@@ -68,5 +67,5 @@ if !(isServer) then {
     ] spawn BISFUNC(EXP_camp_SITREP);
     sleep 12;
     5 fadeMusic 0;
-    ["end1", true, 5] spawn BISFUNC(endMission);
+    ["end2", true, 5] spawn BISFUNC(endMission);
 };

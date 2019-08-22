@@ -13,9 +13,9 @@
             <English>End win w/ statistic</English>
             <German>Gewinne mit Statistik</German>
         </Key>
-        <Key ID="STR_kat_template_endLose">
-            <English>End lose</English>
-            <German>Verlierer Ende</German>
+        <Key ID="STR_kat_template_endLoseNice">
+            <English>End lose w/ statistic</English>
+            <German>Verliere mit Statistik</German>
         </Key>
         <Key ID="STR_kat_template_healAll">
             <English>Heal all player</English>

@@ -29,6 +29,6 @@ if !(hasInterface) exitWith {};
         {[] remoteExec [QFUNC(endWinNice), 0, false];}
 ] call Ares_fnc_RegisterCustomModule;
 
-["KAT Template Helper", localize LSTRING(endLose),
-        {[] remoteExec [QFUNC(endLose), 2, false];}
+["KAT Template Helper", localize LSTRING(endLoseNice),
+        {[] remoteExec [QFUNC(endLoseNice), 0, false];}
 ] call Ares_fnc_RegisterCustomModule;

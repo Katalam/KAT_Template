@@ -24,6 +24,7 @@ class CfgFunctions {
             file = "functions\endings";
             class addStatisticValues;
             class endLose;
+            class endLoseNice;
             class endLosePrivate;
             class endWin;
             class endWinNice;
