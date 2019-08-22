@@ -32,6 +32,7 @@ class CfgFunctions {
         };
         class general {
             file = "functions\general";
+            class canUnflip;
             class createInteractionsVarious;
             class createSpectator;
             class createTechnicalDiaryRecord;

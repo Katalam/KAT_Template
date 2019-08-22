@@ -86,5 +86,5 @@ private _gunbagAction = [QGVAR(weaponSwitch), localize LSTRING(switchGun), "\z\a
 ["CAManBase", 1, ["ACE_SelfActions", "ACE_Equipment", "ace_gunbag_actions"], _gunbagAction, true] call ACEFUNC(interact_menu,addActionToClass);
 
 // unflip vehicle
-private _unflipVehicleAction = [QGVAR(unflipVehicle), localize LSTRING(unflipVehicle), "data\interactions\unflipVehicle.paa", {_this spawn FUNC(unflipVehicle)}, {true}] call ACEFUNC(interact_menu,createAction);
+private _unflipVehicleAction = [QGVAR(unflipVehicle), localize LSTRING(unflipVehicle), "data\interactions\unflipVehicle.paa", {_this spawn FUNC(unflipVehicle)}, LINKFUNC(canUnflip)] call ACEFUNC(interact_menu,createAction);
 ["Car", 0, ["ACE_MainActions"], _unflipVehicleAction, true] call ACEFUNC(interact_menu,addActionToClass);
