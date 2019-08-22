@@ -15,7 +15,7 @@
  */
 
 // only continue with admins and curators
-private _isAdmin = (call BISFUNC(admin)) isEqualTo 2;
+private _isAdmin = (call BISFUNC(admin)) > 0;
 private _isCurator = (!isNull (getAssignedCuratorLogic player));
 if !(_isCurator || _isAdmin) exitWith {};
 
