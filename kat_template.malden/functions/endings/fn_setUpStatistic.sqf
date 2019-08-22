@@ -23,6 +23,9 @@ if (isServer) then {
     GVAR(end_bandagesApplied) = 0;
     GVAR(end_pulseChecked) = 0;
     GVAR(end_cprPerformed) = 0;
+    GVAR(end_launcherFired) = 0;
+    GVAR(end_handGunFired) = 0;
+    GVAR(end_vehicleFired) = 0;
 
     addMissionEventHandler ["EntityKilled", {
         params ["_unit"];
@@ -45,6 +48,20 @@ if (isServer) then {
             if (_weapon isEqualTo primaryWeapon _unit) then {
                 GVAR(end_shotsFired) = GVAR(end_shotsFired) + 1;
             };
+            if (_weapon isEqualTo secondaryWeapon _unit) then {
+                GVAR(end_launcherFired) = GVAR(end_launcherFired) + 1;
+            };
+            if (_weapon isEqualTo handgunWeapon _unit) then {
+                GVAR(end_handGunFired) = GVAR(end_handGunFired) + 1;
+            };
+        };
+    }] call CBA_fnc_addClassEventHandler;
+
+    ["Car", "Fired", {
+        params ["_unit", "", "", "", "", "", "", "_vehicle"];
+
+        if (isPlayer _unit && !(_vehicle isEqualTo objNull)) then {
+            GVAR(end_vehicleFired) = GVAR(end_vehicleFired) + 1;
         };
     }] call CBA_fnc_addClassEventHandler;
 };

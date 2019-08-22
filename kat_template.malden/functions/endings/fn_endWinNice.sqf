@@ -22,6 +22,9 @@ if !(isServer) then {
     publicVariable QGVAR(end_shotsFired);
     publicVariable QGVAR(end_aiKilled);
     publicVariable QGVAR(end_fragsOut);
+    publicVariable QGVAR(end_launcherFired);
+    publicVariable QGVAR(end_handGunFired);
+    publicVariable QGVAR(end_vehicleFired);
     [{
         publicVariable QGVAR(end_pulseChecked);
         publicVariable QGVAR(end_bandagesApplied);
@@ -59,6 +62,12 @@ if !(isServer) then {
         [format ["%1 Kugeln abgegeben", GVAR(end_shotsFired)], 1, 2],
         [format ["%1 Granaten geworfen", GVAR(end_fragsOut)], 1, 2],
         [format ["%1 Feinde bekämpft", GVAR(end_aiKilled)], 1, 3]
+    ] spawn BISFUNC(EXP_camp_SITREP);
+    sleep 12;
+    [
+        [format ["%1 Werfer benutzt", GVAR(end_launcherFired)], 1, 2],
+        [format ["%1 Pistolenkugeln verschossen", GVAR(end_handGunFired)], 1, 2],
+        [format ["%1 Fahrzeugkugeln abgebeben", GVAR(end_vehicleFired)], 1, 3]
     ] spawn BISFUNC(EXP_camp_SITREP);
     sleep 12;
     [
