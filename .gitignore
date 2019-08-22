@@ -2,6 +2,4 @@ armake2.exe
 \remove
 *.pbo
 \release
-
-# temp
-\coXX_kat_xx_v01.Altis
+\co*
