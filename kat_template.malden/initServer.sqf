@@ -61,3 +61,8 @@ call FUNC(prepareLoadouts);
         };
     }];
 }, true, [], true] call CBA_fnc_addClassEventHandler;
+
+// adds satcom ability to all planes
+// player have to have the "KAT_template_satComLinks" variable set to the same
+// standard is SATCOM 1 and SATCOM 2 for all pilots, no crew member
+[["Plane"], ["SATCOM 1", "SATCOM 2"]] call FUNC(satcom);

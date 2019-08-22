@@ -11,6 +11,7 @@ _player setVariable ["ACE_medical_medicClass", 1, true];
 _player setVariable ["ACE_GForceCoef", 0.3, true];
 _player setVariable ["ACE_isEngineer", 2, true];
 _player setVariable ["ACE_isEOD", false, true];
+_player setVariable [QGVAR(satComLinks), ["SATCOM 1", "SATCOM 2"]];
 
 _player setUnitRank "SERGEANT";
 
