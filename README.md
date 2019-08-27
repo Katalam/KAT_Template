@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://github.com/Katalam/KAT_template/releases/latest">
-        <img src="https://img.shields.io/badge/Version-2.0.10-blue.svg?style=flat-square" alt="KAT Template Version">
+        <img src="https://img.shields.io/badge/Version-2.1.12-blue.svg?style=flat-square" alt="KAT Template Version">
     </a>
     <a href="https://github.com/Katalam/KAT_template/issues">
         <img src="https://img.shields.io/github/issues-raw/Katalam/KAT_Template.svg?style=flat-square&label=Issues" alt="KAT 10thMods Issues">
