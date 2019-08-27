@@ -69,6 +69,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 - **Katalam** - *Initial work*
 - **Sinus** - *Initial work*
+- **Tank** - *Insignia's*
 
 <!---
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.

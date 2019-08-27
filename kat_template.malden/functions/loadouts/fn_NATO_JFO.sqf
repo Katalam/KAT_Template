@@ -87,6 +87,6 @@ _player addItemToUniform WEAPON_HGUN_AMMO;
 _player addWeapon WEAPON_HGUN;
 _player addItemToUniform WEAPON_HGUN_AMMO;
 
-[_player, "KAT_JFO"] call BISFUNC(setUnitInsignia);
+//[_player, "KAT_JFO"] call BISFUNC(setUnitInsignia);
 
 true;
