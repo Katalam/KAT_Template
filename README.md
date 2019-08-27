@@ -21,7 +21,7 @@
 
 # KAT_Template
 
-Arma 3 is a sandbox game. Everyone is playing it on a different way. But I want to build in technical terms the same missions. A template will set up the things you need in every mission. The Loadout changer, the teleporter for technical issues, a vehicle spawner. Also the MACRO stuff has to be prepared. The git will contain the latest version of the template and some missions I build.
+Arma 3 is a sandbox game. Everyone is playing it on a different way. But I want to build in technical terms the same missions. A template will set up the things you need in every mission. The Loadout changer, the teleporter for technical issues, a vehicle spawner. Also the MACRO stuff has to be prepared. The git will contain the latest version of the template.
 
 ## Getting started
 
