@@ -29,4 +29,28 @@ class CfgUnitInsignia {
         texture = "data\insignia\medic.paa";
         textureVehicle = ""; // does nothing
     };
+    class KAT_JTAC {
+        displayName = "JTAC US (Grey)";
+        author = $STR_kat_template_author;
+        texture = "data\insignia\jtac.paa";
+        textureVehicle = ""; // does nothing
+    };
+    class KAT_FO {
+        displayName = "FO US (Grey)";
+        author = $STR_kat_template_author;
+        texture = "data\insignia\fo.paa";
+        textureVehicle = ""; // does nothing
+    };
+    class KAT_PJ {
+        displayName = "PJ US (Grey)";
+        author = $STR_kat_template_author;
+        texture = "data\insignia\pj.paa";
+        textureVehicle = ""; // does nothing
+    };
+    class KAT_TACP {
+        displayName = "TACP US (Grey)";
+        author = $STR_kat_template_author;
+        texture = "data\insignia\tacp.paa";
+        textureVehicle = ""; // does nothing
+    };
 };
