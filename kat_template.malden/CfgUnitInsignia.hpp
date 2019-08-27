@@ -53,4 +53,16 @@ class CfgUnitInsignia {
         texture = "data\insignia\tacp.paa";
         textureVehicle = ""; // does nothing
     };
+    class KAT_EOD {
+        displayName = "EOD US (Grey)";
+        author = $STR_kat_template_author;
+        texture = "data\insignia\eod.paa";
+        textureVehicle = ""; // does nothing
+    };
+    class KAT_FAC {
+        displayName = "FAC US (Grey)";
+        author = $STR_kat_template_author;
+        texture = "data\insignia\fac.paa";
+        textureVehicle = ""; // does nothing
+    };
 };
