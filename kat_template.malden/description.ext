@@ -39,6 +39,7 @@ class Header {
 #include "CfgDebriefing.hpp"
 #include "CfgUnitInsignia.hpp"
 #include "Params.hpp"
+#include "data\changeGroupname.hpp"
 
 class CfgRemoteExec {
     class Commands {

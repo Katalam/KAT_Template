@@ -67,6 +67,10 @@
             <English>Unflip vehicle</English>
             <German>Richte Fahrzeug auf</German>
         </Key>
+        <Key ID="STR_kat_template_changeGroupName">
+            <English>Change groupname</English>
+            <German>Gruppennamen ändern</German>
+        </Key>
     </Package>
     <Package name="loadout">
         <Key ID="STR_kat_template_loadout">

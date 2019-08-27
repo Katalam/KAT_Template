@@ -88,3 +88,7 @@ private _gunbagAction = [QGVAR(weaponSwitch), localize LSTRING(switchGun), "\z\a
 // unflip vehicle
 private _unflipVehicleAction = [QGVAR(unflipVehicle), localize LSTRING(unflipVehicle), "data\interactions\unflipVehicle.paa", {_this spawn FUNC(unflipVehicle)}, LINKFUNC(canUnflip)] call ACEFUNC(interact_menu,createAction);
 ["Car", 0, ["ACE_MainActions"], _unflipVehicleAction, true] call ACEFUNC(interact_menu,addActionToClass);
+
+// change group name
+private _changeGroupNameAction = [QGVAR(changeGroupName), localize LSTRING(changeGroupName), "", {createDialog QGVAR(changeGroupName)}, {leader group player == player}] call ACEFUNC(interact_menu,createAction);
+["CAManBase", 1, ["ACE_SelfActions", "ACE_TeamManagement"], _changeGroupNameAction, true] call ACEFUNC(interact_menu,addActionToClass);
