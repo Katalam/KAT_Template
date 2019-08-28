@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=1430;
+		nextID=1434;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=26;
+		nextID=30;
 	};
 	class Camera
 	{
-		pos[]={825.32819,130.97766,12192.414};
-		dir[]={-0.49595532,-0.7678178,-0.40563649};
-		up[]={-0.59440047,0.64058006,-0.48615405};
-		aside[]={-0.63311881,2.9522926e-007,0.7740888};
+		pos[]={758.64063,43.626488,12134.937};
+		dir[]={-0.020729862,-0.84966481,-0.52711076};
+		up[]={-0.033393424,0.52724159,-0.84904361};
+		aside[]={-0.99932331,1.7865459e-006,0.039303195};
 	};
 };
 binarizationWanted=0;
@@ -516,7 +516,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=300;
+		items=301;
 		class Item0
 		{
 			dataType="Logic";
@@ -910,7 +910,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=608;
-					type="B_Soldier_F";
+					type="B_recon_JTAC_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18919,6 +18919,17 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item300
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={760.10388,28.92,12120.501};
+			};
+			title="Colorful panels";
+			description="In order to get the ace interaction for the color panels you need to place a vanilla jtac.";
+			id=1433;
 		};
 	};
 };

@@ -38,6 +38,7 @@ class CfgFunctions {
             class changeGroupNameInit;
             class createInteractionsVarious;
             class createSpectator;
+            class createTarp;
             class createTechnicalDiaryRecord;
             class createTeleporter;
             class noLooting;

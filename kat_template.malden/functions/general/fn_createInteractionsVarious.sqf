@@ -92,3 +92,36 @@ private _unflipVehicleAction = [QGVAR(unflipVehicle), localize LSTRING(unflipVeh
 // change group name
 private _changeGroupNameAction = [QGVAR(changeGroupName), localize LSTRING(changeGroupName), "", {createDialog QGVAR(changeGroupName)}, {leader group player == player}] call ACEFUNC(interact_menu,createAction);
 ["CAManBase", 1, ["ACE_SelfActions", "ACE_TeamManagement"], _changeGroupNameAction, true] call ACEFUNC(interact_menu,addActionToClass);
+
+
+// create panel
+private _createPanelActionParent = [QGVAR(createPanelParent), localize LSTRING(createPanel), "", {}, {true}] call ACEFUNC(interact_menu,createAction);
+["B_recon_JTAC_F", 1, ["ACE_SelfActions", "ACE_Equipment"], _createPanelActionParent, true] call ACEFUNC(interact_menu,addActionToClass);
+
+// red
+private _createPanelActionRed = [QGVAR(createPanelRed), localize LSTRING(createPanelRed), "", {[getPos _player] call FUNC(createTarp)}, {true}] call ACEFUNC(interact_menu,createAction);
+["B_recon_JTAC_F", 1, ["ACE_SelfActions", "ACE_Equipment", QGVAR(createPanelParent)], _createPanelActionRed, true] call ACEFUNC(interact_menu,addActionToClass);
+
+private _createPanelActionRedSmall = [QGVAR(createPanelRedSmall), localize LSTRING(createPanelRedSmall), "", {[getPos _player, "RED", true] call FUNC(createTarp)}, {true}] call ACEFUNC(interact_menu,createAction);
+["B_recon_JTAC_F", 1, ["ACE_SelfActions", "ACE_Equipment", QGVAR(createPanelParent)], _createPanelActionRedSmall, true] call ACEFUNC(interact_menu,addActionToClass);
+
+// black
+private _createPanelActionBlack = [QGVAR(createPanelBlack), localize LSTRING(createPanelBlack), "", {[getPos _player, "BLACK"] call FUNC(createTarp)}, {true}] call ACEFUNC(interact_menu,createAction);
+["B_recon_JTAC_F", 1, ["ACE_SelfActions", "ACE_Equipment", QGVAR(createPanelParent)], _createPanelActionBlack, true] call ACEFUNC(interact_menu,addActionToClass);
+
+private _createPanelActionBlackSmall = [QGVAR(createPanelBlackSmall), localize LSTRING(createPanelBlackSmall), "", {[getPos _player, "BLACK", true] call FUNC(createTarp)}, {true}] call ACEFUNC(interact_menu,createAction);
+["B_recon_JTAC_F", 1, ["ACE_SelfActions", "ACE_Equipment", QGVAR(createPanelParent)], _createPanelActionBlackSmall, true] call ACEFUNC(interact_menu,addActionToClass);
+
+// yellow
+private _createPanelActionBlack = [QGVAR(createPanelYellow), localize LSTRING(createPanelYellow), "", {[getPos _player, "YELLOW"] call FUNC(createTarp)}, {true}] call ACEFUNC(interact_menu,createAction);
+["B_recon_JTAC_F", 1, ["ACE_SelfActions", "ACE_Equipment", QGVAR(createPanelParent)], _createPanelActionBlack, true] call ACEFUNC(interact_menu,addActionToClass);
+
+private _createPanelActionBlackSmall = [QGVAR(createPanelYellowSmall), localize LSTRING(createPanelYellowSmall), "", {[getPos _player, "YELLOW", true] call FUNC(createTarp)}, {true}] call ACEFUNC(interact_menu,createAction);
+["B_recon_JTAC_F", 1, ["ACE_SelfActions", "ACE_Equipment", QGVAR(createPanelParent)], _createPanelActionBlackSmall, true] call ACEFUNC(interact_menu,addActionToClass);
+
+// green
+private _createPanelActionGreen = [QGVAR(createPanelGreen), localize LSTRING(createPanelGreen), "", {[getPos _player, "GREEN"] call FUNC(createTarp)}, {true}] call ACEFUNC(interact_menu,createAction);
+["B_recon_JTAC_F", 1, ["ACE_SelfActions", "ACE_Equipment", QGVAR(createPanelParent)], _createPanelActionGreen, true] call ACEFUNC(interact_menu,addActionToClass);
+
+private _createPanelActionGreenSmall = [QGVAR(createPanelGreenSmall), localize LSTRING(createPanelGreenSmall), "", {[getPos _player, "GREEN", true] call FUNC(createTarp)}, {true}] call ACEFUNC(interact_menu,createAction);
+["B_recon_JTAC_F", 1, ["ACE_SelfActions", "ACE_Equipment", QGVAR(createPanelParent)], _createPanelActionGreenSmall, true] call ACEFUNC(interact_menu,addActionToClass);
