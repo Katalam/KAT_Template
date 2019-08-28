@@ -45,6 +45,19 @@ switch (_color) do {
 
 private _tarp = createVehicle [_classname, _position, [], 0, "CAN_COLLIDE"];
 _tarp enableSimulation false;
+
+
+private "_posHelper";
+if (_small) then {
+    _posHelper = _position vectorAdd [random 1, random 1, 0];
+} else {
+    _posHelper = _position vectorAdd [random 5, random 5, 0];
+};
+
+private _helper = createVehicle ["Land_PortableCabinet_01_closed_sand_F", _posHelper, [], 0, "CAN_COLLIDE"];
+_helper setDir random 360;
+_helper setVariable [QGVAR(panelRemoveHelper), true, true];
+
 private _vector = surfaceNormal getPos _tarp;
 _vector params ["_xb", "_yb"];
 _tarp setVectorUp [_xb, _yb, 1];

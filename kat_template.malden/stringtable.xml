@@ -107,6 +107,10 @@
             <English>Black (Small)</English>
             <German>Schwarz (Klein)</German>
         </Key>
+        <Key ID="STR_kat_template_panelRemove">
+            <English>Remove Panel</English>
+            <German>Entferne Panel</German>
+        </Key>
     </Package>
     <Package name="loadout">
         <Key ID="STR_kat_template_loadout">

@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=30;
+		nextID=32;
 	};
 	class Camera
 	{
@@ -516,7 +516,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=301;
+		items=300;
 		class Item0
 		{
 			dataType="Logic";
@@ -18919,17 +18919,6 @@ class Mission
 				};
 				nAttributes=2;
 			};
-		};
-		class Item300
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={760.10388,28.92,12120.501};
-			};
-			title="Colorful panels";
-			description="In order to get the ace interaction for the color panels you need to place a vanilla jtac.";
-			id=1433;
 		};
 	};
 };
