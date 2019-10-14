@@ -131,11 +131,11 @@
             <English>Template Malden</English>
             <German>Template Malden</German>
         </Key>
-        <Key ID="STR_kat_template_loadout_overviewText">
+        <Key ID="STR_kat_template_overviewText">
             <English>Mission template for NATO: 10-Man-Riflesquads, Weapon Teams, Logistic, Helicopter- und Tank Crew und Curator.</English>
             <German>Missionstemplate für NATO: 10-Mann-Gruppen, Waffen Teams, Logistik, Helikopter- und Kampfpanzerbesatzung und Zeus.</German>
         </Key>
-        <Key ID="STR_kat_template_loadout_onLoadMission">
+        <Key ID="STR_kat_template_onLoadMission">
             <English>Best of luck!</English>
             <German>Viel Spaß!</German>
         </Key>

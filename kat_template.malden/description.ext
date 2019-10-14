@@ -9,9 +9,9 @@ author = $STR_kat_template_author; // mission author
 OnLoadName = $STR_kat_template_onLoadName; // mission title
 
 // choose-mission-screen description
-overviewText = $STR_kat_template_loadout_overviewText;
+overviewText = $STR_kat_template_overviewText;
 
-onLoadMission = $STR_kat_template_loadout_onLoadMission;
+onLoadMission = $STR_kat_template_onLoadMission;
 //loadScreen = "";
 //overviewPicture = "";
 enableDebugConsole[] = {"76561198171059785"};
