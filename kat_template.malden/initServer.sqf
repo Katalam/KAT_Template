@@ -20,7 +20,9 @@ if (isDedicated) then {
     // add server side event handlers for the statistics at mission end
     call FUNC(setUpStatistic);
     // will set the ace-cargo of the object to 0 is object isEqualTo Land_CargoBox_V1_F
-    [crate_logistic] call FUNC(createCrateSpawn);
+    if (!isNil "crate_logistic") then {
+        [crate_logistic] call FUNC(createCrateSpawn);
+    };
 };
 
 // set the ai (it doesnt matter if pre placed or curator placed) to a specific skill

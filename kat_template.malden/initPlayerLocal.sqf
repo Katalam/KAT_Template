@@ -143,6 +143,7 @@ private _loadoutName = [str player] call FUNC(getLoadoutName);
 
 // add scripts to briefing for some players
 // Admin and Platoon Leader get extra curator modules and a page with diary scripts
+// With v1.95 change it to needle in haystack. "a" in "ab" returns true
 if (_loadoutName in ["NATO_ADM", "NATO_PTL"]) then {
     call FUNC(setUpDiaryScripts);
     call FUNC(addAresHelpers);
@@ -153,24 +154,34 @@ if (_loadoutName in ["NATO_ADM", "NATO_PTL"]) then {
 };
 
 // creates the loadout gui at the object called board
-[board] call FUNC(createLoadoutGUI);
+if (!isNil "board") then {
+    [board] call FUNC(createLoadoutGUI);
+};
 
 // creates the logistic crate spawner at the object called crate_logistic
 // will spawn crates at the position of the "marker_cratespawn" called marker
-[crate_logistic, "marker_cratespawn"] call FUNC(createCrateSpawn);
+if (!isNil "crate_logistic") then {
+    [crate_logistic, "marker_cratespawn"] call FUNC(createCrateSpawn);
+};
 
 // add the teleporter to the object called flagTP
-[flagTP] call FUNC(createTeleporter);
+if (!isNil "flagTP") then {
+    [flagTP] call FUNC(createTeleporter);
+};
 
 // add the spectator action to a object called tv
 // will teleport people to the position of the "marker_teleport_spectator" called marker
 // move the marker away from any possible alive player contact
 // spectator can still talk with other spectator and will be heard by anybody near
-[tv, "marker_teleport_spectator"] call FUNC(createSpectator);
+if (!isNil "tv") then {
+    [tv, "marker_teleport_spectator"] call FUNC(createSpectator);
+};
 
 // add the vehicle spawner gui
 // spawns vehicle at the position of the "marker_vehiclespawn" called marker
-[battery, "marker_vehiclespawn"] call FUNC(createVehicleSpawn);
+if (!isNil "battery") then {
+    [battery, "marker_vehiclespawn"] call FUNC(createVehicleSpawn);
+};
 
 // adds some different and small ace interaction
 call FUNC(createInteractionsVarious);
