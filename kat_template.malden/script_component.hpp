@@ -5,6 +5,7 @@
 #define MAJOR 2
 #define MINOR 1
 #define PATCHLVL 12
+#define MISSIONVERSION 1
 #define DAY 27
 #define MONTH 8
 #define YEAR 2019
