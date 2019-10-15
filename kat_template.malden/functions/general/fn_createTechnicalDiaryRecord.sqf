@@ -127,4 +127,4 @@ Organisatorisches:
 - Es ist am nahe dem Respawnpunkt eine Flagge für einen Teleport nach technischen Problemen vorhanden.
 <br/>
 - Bitte haltet euch zurück mit out-of-character-Gesprächen.
-Die anderen Spielerinnen und Spieler werden es euch danken."]]];
+Die anderen Spielerinnen und Spieler werden es euch danken.<br/><br/><br/>KAT_Template Version " + QUOTE(MAJOR.MINOR.PATCHLVL)]]];
