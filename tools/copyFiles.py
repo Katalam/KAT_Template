@@ -23,7 +23,7 @@ for root, dirs, files in os.walk(location):
 root_src_dir = full_path
 root_dst_dir = root_src_dir[:-19]
 
-src_txt = input("Source directory: ")
+src_txt = input("Destination directory: ")
 
 dst_dir_test = os.path.join(root_dst_dir, src_txt)
 if os.path.isdir(dst_dir_test):
