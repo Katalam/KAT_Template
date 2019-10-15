@@ -41,8 +41,10 @@ class CfgFunctions {
             class createTarp;
             class createTechnicalDiaryRecord;
             class createTeleporter;
+            class getInsignia;
             class noLooting;
             class satcom;
+            class setInsignia;
             class setUpLocations;
             class spawnProtection;
             class teleport;

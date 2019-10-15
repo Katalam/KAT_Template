@@ -235,3 +235,6 @@ player createDiaryRecord ["Diary", ["Situation", ""]];
 
 // initialize the ui for the zeusfpsmonitor
 [] call FUNC(initializeUI);
+
+["CAManBase", "Take", FUNC(setInsignia)] call CBA_fnc_addClassEventHandler;
+["CAManBase", "InventoryOpened", FUNC(getInsignia)] call CBA_fnc_addClassEventHandler;
