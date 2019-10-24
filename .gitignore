@@ -3,3 +3,5 @@ armake2.exe
 *.pbo
 \release
 \co*
+!copyFiles.exe
+tools/__pycache__

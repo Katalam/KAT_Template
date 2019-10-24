@@ -71,46 +71,6 @@
             <English>Change groupname</English>
             <German>Gruppennamen ändern</German>
         </Key>
-        <Key ID="STR_kat_template_createPanel">
-            <English>Create panel</English>
-            <German>Breite Panel aus</German>
-        </Key>
-        <Key ID="STR_kat_template_createPanelRed">
-            <English>Red</English>
-            <German>Rot</German>
-        </Key>
-        <Key ID="STR_kat_template_createPanelRedSmall">
-            <English>Red (Small)</English>
-            <German>Rot (Small)</German>
-        </Key>
-        <Key ID="STR_kat_template_createPanelYellow">
-            <English>Yellow</English>
-            <German>Gelb</German>
-        </Key>
-        <Key ID="STR_kat_template_createPanelYellowSmall">
-            <English>Yellow (Small)</English>
-            <German>Gelb (Small)</German>
-        </Key>
-        <Key ID="STR_kat_template_createPanelGreen">
-            <English>Green</English>
-            <German>Grün</German>
-        </Key>
-        <Key ID="STR_kat_template_createPanelGreenSmall">
-            <English>Green (Small)</English>
-            <German>Grün (Small)</German>
-        </Key>
-        <Key ID="STR_kat_template_createPanelBlack">
-            <English>Black</English>
-            <German>Schwarz</German>
-        </Key>
-        <Key ID="STR_kat_template_createPanelBlackSmall">
-            <English>Black (Small)</English>
-            <German>Schwarz (Klein)</German>
-        </Key>
-        <Key ID="STR_kat_template_panelRemove">
-            <English>Remove Panel</English>
-            <German>Entferne Panel</German>
-        </Key>
     </Package>
     <Package name="loadout">
         <Key ID="STR_kat_template_loadout">
