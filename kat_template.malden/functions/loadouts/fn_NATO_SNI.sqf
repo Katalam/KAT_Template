@@ -62,12 +62,13 @@ _gunbagContainer setVariable ["ace_gunbag_gunbagWeapon", _gunBagInv, true];
 /** NIGHT FIGHT STUFF */
 switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
     case 1: {
-        _player addItemToUniform "ACE_Flashlight_KSF1";
+        _player addItemToUniform "ACE_Flashlight_XL50";
         _player addItemToUniform "ACE_HandFlare_Yellow";
     };
     case 2: {
-        _player addItemToUniform "ACE_Flashlight_KSF1";
-        _player linkItem "ACE_NVG_Wide";
+        _player addPrimaryWeaponItem LASER(WEAPON_SNI_NVG);
+        _player addItemToUniform "ACE_Flashlight_XL50";
+        _player linkItem NVG_RFM;
         _player addItemToUniform "ACE_IR_Strobe_Item";
     };
     default {

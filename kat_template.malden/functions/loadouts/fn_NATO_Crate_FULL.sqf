@@ -78,13 +78,12 @@ _box addItemCargoGlobal ["ACE_Clacker", 1];
 _box addItemCargoGlobal ["ACE_DefusalKit", 1];
 _box addItemCargoGlobal ["DemoCharge_Remote_Mag", 4];
 _box addItemCargoGlobal ["ACE_CableTie", 10];
-_box addItemCargoGlobal ["ACE_Flashlight_KSF1", 1];
 _box addItemCargoGlobal ["ACE_Flashlight_XL50", 1];
 _box addItemCargoGlobal ["ItemcTabHCam", 2];
 _box addItemCargoGlobal ["ACE_RangeCard", 1];
 _box addItemCargoGlobal ["ACE_wirecutter", 1];
 _box addItemCargoGlobal ["ToolKit", 1];
-_box addItemCargoGlobal ["ACE_NVG_Wide", 1];
+_box addItemCargoGlobal [NVG_RFM, 1];
 
 // COMMs
 _box addItemCargoGlobal ["ItemMap", 1];

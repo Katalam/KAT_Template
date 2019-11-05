@@ -40,11 +40,11 @@ _player addItemToUniform "SmokeShellGreen";
 switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
     case 1: {
         _player addItemToUniform "ACE_HandFlare_Yellow";
-        _player addItemToUniform "ACE_Flashlight_KSF1";
+        _player addItemToUniform "ACE_Flashlight_XL50";
     };
     case 2: {
         _player addItemToUniform "ACE_IR_Strobe_Item";
-        _player addItemToUniform "ACE_Flashlight_KSF1";
+        _player addItemToUniform "ACE_Flashlight_XL50";
     };
     default {
         _player addItemToUniform "SmokeShellOrange";

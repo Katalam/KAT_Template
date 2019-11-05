@@ -58,8 +58,8 @@ for "_i" from 1 to 2 do {
 switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
     case 1: {
         _player addWeapon "ACE_VectorDay";
-        _player addPrimaryWeaponItem "acc_flashlight";
-        _player addItemToUniform "ACE_Flashlight_KSF1";
+        _player addPrimaryWeaponItem FLASHLIGHT(WEAPON_RFM_NVG);
+        _player addItemToUniform "ACE_Flashlight_XL50";
         _player addItemToUniform "ACE_HandFlare_Yellow";
         for "_i" from 1 to 3 do {
             _player addItemToVest "UGL_FlareYellow_F";
@@ -67,9 +67,9 @@ switch (["GearLevel", 0] call BISFUNC(getParamValue)) do {
     };
     case 2: {
         _player addWeapon "ACE_Vector";
-        _player addPrimaryWeaponItem "acc_pointer_IR";
-        _player addItemToUniform "ACE_Flashlight_KSF1";
-        _player linkItem "ACE_NVG_Wide";
+        _player addPrimaryWeaponItem LASER(WEAPON_RFM_NVG);
+        _player addItemToUniform "ACE_Flashlight_XL50";
+        _player linkItem NVG_RFM;
         _player addItemToUniform "ACE_IR_Strobe_Item";
     };
     default {
