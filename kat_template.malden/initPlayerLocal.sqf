@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Katalam
- * Intialize player side.
+ * Initialize player side.
  */
 
 // disable arma voice chat
@@ -144,7 +144,7 @@ private _loadoutName = [str player] call FUNC(getLoadoutName);
 // add scripts to briefing for some players
 // Admin and Platoon Leader get extra curator modules and a page with diary scripts
 // With v1.95 change it to needle in haystack. "a" in "ab" returns true
-if (_loadoutName in ["NATO_ADM", "NATO_PTL"]) then {
+if (_loadoutName in "ADM" || {_loadoutName in "PTL"}) then {
     call FUNC(setUpDiaryScripts);
     call FUNC(addAresHelpers);
 
@@ -236,5 +236,8 @@ player createDiaryRecord ["Diary", ["Situation", ""]];
 // initialize the ui for the zeusfpsmonitor
 [] call FUNC(initializeUI);
 
+// solve the insignia problem
+// everytime someone opened their inventory the insignia has disappeared
+// This will readd the insignia every time
 ["CAManBase", "Take", FUNC(setInsignia)] call CBA_fnc_addClassEventHandler;
 ["CAManBase", "InventoryOpened", FUNC(getInsignia)] call CBA_fnc_addClassEventHandler;
