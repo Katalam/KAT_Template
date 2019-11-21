@@ -17,7 +17,7 @@ location = os.path.dirname(os.path.dirname(scriptpath))
 for root, dirs, files in os.walk(location):
     path = os.path.splitdrive(root)
     for name in dirs:
-        if 'kat_template.malden'.lower() in name:
+        if 'kat_ttt_template.malden'.lower() in name:
             full_path = os.path.join(os.path.join(*path), name)
 
 root_src_dir = full_path
