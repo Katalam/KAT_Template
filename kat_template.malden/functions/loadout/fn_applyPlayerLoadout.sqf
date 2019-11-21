@@ -31,7 +31,9 @@ if (local _player) then {
 
     private _loadout = [GVAR(loadouts_player), _loadoutName] call BISFUNC(getFromPairs);
 
-    if (isNil "_loadout") exitWith {};
+    if (isNil "_loadout") exitWith {
+        "Loadout not found"
+    };
 
     [_player] call FUNC(clearPlayerInventory);
 

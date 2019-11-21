@@ -36,7 +36,9 @@ if (isNil QGVAR(loadouts_vehicles)) exitWith {false;};
 
 private _loadout = [GVAR(loadouts_vehicles), _loadoutName] call BISFUNC(getFromPairs);
 
-if (isNil "_loadout") exitWith {false;};
+if (isNil "_loadout") exitWith {
+    "Loadout not found"
+};
 
 [_vehicle] call FUNC(clearVehicleInventory);
 [_vehicle] call _loadout;

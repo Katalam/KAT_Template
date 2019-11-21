@@ -66,7 +66,7 @@ if !(isServer) then {
     [
         [format ["%1 Werfer benutzt", GVAR(end_launcherFired)], 1, 2],
         [format ["%1 Pistolenkugeln verschossen", GVAR(end_handGunFired)], 1, 2],
-        [format ["%1 Fahrzeugkugeln abgebeben", GVAR(end_vehicleFired)], 1, 3]
+        [format ["%1 Fahrzeugkugeln abgegeben", GVAR(end_vehicleFired)], 1, 3]
     ] spawn BISFUNC(EXP_camp_SITREP);
     sleep 12;
     [
