@@ -4,6 +4,6 @@ armake2.exe
 \release
 \co*
 \kat*
-!kat_template.malden
+!kat_ttt_template.malden
 !copyFiles.exe
 tools/__pycache__
