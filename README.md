@@ -1,8 +1,4 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Katalam/KAT_template/master/logo.png">
-</p>
-
-<p align="center">
     <a href="https://github.com/Katalam/KAT_template/releases/latest">
         <img src="https://img.shields.io/badge/Version-2.1.12-blue.svg?style=flat-square" alt="KAT Template Version">
     </a>
